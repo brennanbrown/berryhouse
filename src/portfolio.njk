@@ -5,26 +5,29 @@ permalink: /portfolio/
 ---
 
 <h1 class="text-2xl font-bold mb-4">Portfolio</h1>
-<p class="text-gray-600 dark:text-gray-400 mb-6">Showcase selected work. Replace with your own projects and case studies.</p>
+<p class="text-gray-600 dark:text-gray-400 mb-6">Selected JAMstack and web development work. Case studies highlight goals, approach, and outcomes.</p>
 
 <section class="space-y-8">
-  <div>
-    <h2 class="text-xl font-semibold">Static Blog Template</h2>
-    <p class="text-gray-700 dark:text-gray-300">An Eleventy starter focused on accessibility, IndieWeb features, and reliable E2E tests.</p>
-    <ul class="list-disc pl-5 text-gray-600 dark:text-gray-400 text-sm">
-      <li>Accessible navigation and skip links</li>
-      <li>Open Graph/Twitter meta defaults</li>
-      <li>Playwright tests (responsive, a11y flows, search)</li>
+  {% if collections.portfolio and collections.portfolio.length %}
+    <ul class="grid gap-6 md:grid-cols-2">
+      {% for item in collections.portfolio | reverse %}
+        <li class="border rounded p-4 bg-[var(--surface)]">
+          <h2 class="text-xl font-semibold"><a href="{{ item.url }}">{{ item.data.title }}</a></h2>
+          {% if item.data.description %}
+          <p class="text-gray-700 dark:text-gray-300">{{ item.data.description }}</p>
+          {% endif %}
+          {% if item.data.technologies %}
+          <p class="text-sm text-gray-500 mt-2">Tech: {{ item.data.technologies | join(', ') }}</p>
+          {% endif %}
+        </li>
+      {% endfor %}
     </ul>
-  </div>
-
-  <div>
-    <h2 class="text-xl font-semibold">Design System Pages</h2>
-    <p class="text-gray-700 dark:text-gray-300">A living style guide to keep typography and components consistent.</p>
-  </div>
+  {% else %}
+    <p class="text-gray-600 dark:text-gray-400">Portfolio items coming soon.</p>
+  {% endif %}
 
   <div class="bg-[var(--surface)] border rounded p-4">
     <p class="font-medium">Interested in working together?</p>
-    <p class="text-sm text-gray-600 dark:text-gray-400">Add your services and contact details here.</p>
+    <p class="text-sm text-gray-600 dark:text-gray-400">See <a href="/services/" class="underline">Services</a> or <a href="/contact/" class="underline">Contact</a> to get started.</p>
   </div>
 </section>

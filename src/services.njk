@@ -1,0 +1,51 @@
+---
+layout: layouts/base.njk
+title: Services
+description: JAMstack development and writing services for corporate clients and accessible pay-what-you-can options for non-profits.
+permalink: /services/
+---
+
+<section class="prose dark:prose-invert">
+  <h1>Services</h1>
+  <p>We build fast, accessible websites and clear, effective content. Our focus is sustainability: plain‑file publishing, inclusive design, and calm technology you can run yourself.</p>
+
+  <h2>How we work</h2>
+  <ul>
+    <li><strong>Discovery & Scope</strong>: Define goals, audiences, constraints, and a right‑sized plan.</li>
+    <li><strong>Content First</strong>: Information architecture and voice before visuals and components.</li>
+    <li><strong>Accessible by Default</strong>: Semantic HTML, performance budgets, and inclusive writing.</li>
+    <li><strong>Ownership</strong>: No lock‑in—portable content, simple pipelines, and clear docs.</li>
+  </ul>
+
+  <h2>Web Development (JAMstack Focus)</h2>
+  <ul>
+    <li><strong>Consultation & Strategy</strong>: Assess needs and design a tailored JAMstack approach.</li>
+    <li><strong>Custom Development</strong>: Build bespoke sites/apps using Eleventy and API‑first integrations.</li>
+    <li><strong>Website Migration</strong>: Move from WordPress/Wix to JAMstack.</li>
+    <li><strong>Performance Optimization</strong>: Improve speed, SEO, and UX.</li>
+    <li><strong>Maintenance & Support</strong>: Ongoing updates and troubleshooting.</li>
+  </ul>
+
+  <h2>Writing</h2>
+  <ul>
+    <li><strong>Copywriting</strong>: Persuasive, on‑brand web and marketing copy.</li>
+    <li><strong>Content Strategy</strong>: Audience research, topic planning, and calendars.</li>
+    <li><strong>Technical Writing</strong>: Clear, accurate docs and guides.</li>
+    <li><strong>Editing & Proofreading</strong>: Clarity, style, and grammar polish.</li>
+    <li><strong>Storytelling Workshops</strong>: From brand narratives to personal essays.</li>
+  </ul>
+
+  <h2>Audiences & Pricing</h2>
+  <h3>Corporate Clients</h3>
+  <p>Project‑based fees, hourly rates, or retainers at standard market rates. You’ll get a clear proposal with scope, deliverables, and timeline.</p>
+  <h3>Non‑profits & Marginalized Communities</h3>
+  <p>Pay‑what‑you‑can or pro bono, depending on scope and capacity. Includes basic JAMstack setup and training, and optional grant writing or storytelling support.</p>
+
+  <div class="not-prose my-6 flex flex-wrap gap-3">
+    <a href="{{ site.calendly or 'https://calendly.com/PLACEHOLDER' }}" class="px-4 py-2 rounded bg-red-600 hover:bg-red-700 transition-colors text-white">Book a consultation</a>
+    <a href="{{ site.community.discord or 'https://discord.com/PLACEHOLDER' }}" class="px-4 py-2 rounded border border-red-600 text-red-600 hover:bg-red-50 dark:hover:bg-red-900/20 transition-colors">Join the Discord</a>
+    <a href="{{ site.donate.patreon or 'https://patreon.com/PLACEHOLDER' }}" class="px-4 py-2 rounded border border-red-600 text-red-600 hover:bg-red-50 dark:hover:bg-red-900/20 transition-colors">Support on Patreon</a>
+  </div>
+
+  {% include "partials/testimonials.njk" %}
+</section>

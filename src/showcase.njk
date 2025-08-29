@@ -1,0 +1,27 @@
+---
+layout: layouts/base.njk
+title: Showcase
+description: A curated list of inspiring JAMstack, IndieWeb, and Digital Garden projects from the community.
+permalink: /showcase/
+---
+
+<section class="prose dark:prose-invert">
+  <h1>Showcase</h1>
+  <p>A curated selection of community projects that embody a fast, accessible, and human-centric web. Submit your site for inclusion using the guidelines below.</p>
+
+  <h2>Featured Projects</h2>
+  <ul>
+    <li><a href="https://example.com" target="_blank" rel="noopener">Example Site</a> — A brief description of why this site is notable.</li>
+  </ul>
+
+  <h2>Submission Guidelines</h2>
+  <ol>
+    <li>Provide the site URL and a 1–2 sentence description.</li>
+    <li>Indicate technologies used (SSG, CSS framework, notable integrations).</li>
+    <li>Highlight any IndieWeb features (microformats, webmentions).</li>
+  </ol>
+
+  <div class="not-prose my-6 flex flex-wrap gap-3">
+    <a href="{{ site.community.discord or 'https://discord.com/PLACEHOLDER' }}" class="px-4 py-2 rounded border border-red-600 text-red-600 hover:bg-red-50 dark:hover:bg-red-900/20 transition-colors">Submit via Discord</a>
+  </div>
+</section>
