@@ -56,11 +56,11 @@
   {# Favicon and theme color #}
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
   <link rel="shortcut icon" href="/assets/favicon.svg" type="image/svg+xml">
-  <link rel="mask-icon" href="/assets/favicon.svg" color="#a78bfa">
+  <link rel="mask-icon" href="/assets/favicon.svg" color="#ef4444">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
-  <meta name="theme-color" content="#a78bfa" />
+  <meta name="theme-color" content="#ef4444" />
   <link rel="manifest" href="/manifest.webmanifest">
   {# Syntax highlighting via Highlight.js CDN - vivid color scheme #}
   <link id="hljs-light" rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/styles/tokyo-night-light.min.css">
@@ -187,7 +187,7 @@
 <body class="bg-[var(--bg)] text-[var(--text)] min-h-screen flex flex-col">
   <div id="progress-bar" aria-hidden="true"></div>
   <header class="bg-[var(--surface)] border-b border-gray-200 dark:border-gray-700">
-    <div class="container mx-auto px-4 py-3 flex items-center gap-3">
+    <div class="mx-auto px-4 py-3 flex items-center gap-3 lg:max-w-6xl 2xl:max-w-7xl">
       <button id="hamburger" class="md:hidden p-2 rounded border border-gray-300 dark:border-gray-600" aria-label="Toggle menu" aria-controls="primary-nav" aria-expanded="false">
         <span class="bar-1 block w-5 h-0.5 bg-gray-700 dark:bg-gray-200 mb-1 transition-transform"></span>
         <span class="bar-2 block w-5 h-0.5 bg-gray-700 dark:bg-gray-200 mb-1 transition-opacity"></span>
@@ -215,51 +215,29 @@
   </header>
 
   <nav class="bg-[var(--surface)] border-b border-gray-200 dark:border-gray-700">
-    <div id="primary-nav" class="container mx-auto px-4 py-2 hidden md:block">
+    <div id="primary-nav" class="mx-auto px-4 py-2 hidden md:block lg:max-w-6xl 2xl:max-w-7xl">
       {% set url = page.url or '/' %}
-      {% set isHome = url == '/' %}
-      {% set isBlog = (url and (url | slice(0, 6) == '/blog/')) %}
-      {% set isAbout = url == '/about/' %}
-      {% set isUses = url == '/uses/' %}
-      {% set isNow = url == '/now/' %}
-      {% set isContact = url == '/contact/' %}
+      {% set navItems = (navigation and navigation.items) or [] %}
       <ul class="flex flex-col md:flex-row text-base md:text-sm space-y-3 md:space-y-0 md:space-x-6">
-        <li>
-          <a href="/" class="nav-item block py-2 text-purple-600 dark:text-purple-400 {% if isHome %}underline font-semibold{% endif %}"
-             {% if isHome %}aria-current="page"{% endif %}>🏠 Home</a>
-        </li>
-        <li>
-          <a href="/blog/" class="nav-item block py-2 text-purple-600 dark:text-purple-400 {% if isBlog %}underline font-semibold{% endif %}"
-             {% if isBlog %}aria-current="page"{% endif %}>✍️ Blog</a>
-        </li>
-        <li>
-          <a href="/about/" class="nav-item block py-2 text-purple-600 dark:text-purple-400 {% if isAbout %}underline font-semibold{% endif %}"
-             {% if isAbout %}aria-current="page"{% endif %}>👋 About</a>
-        </li>
-        <li>
-          <a href="/uses/" class="nav-item block py-2 text-purple-600 dark:text-purple-400 {% if isUses %}underline font-semibold{% endif %}"
-             {% if isUses %}aria-current="page"{% endif %}>🛠️ Uses</a>
-        </li>
-        <li>
-          <a href="/now/" class="nav-item block py-2 text-purple-600 dark:text-purple-400 {% if isNow %}underline font-semibold{% endif %}"
-             {% if isNow %}aria-current="page"{% endif %}>📍 Now</a>
-        </li>
-        <li>
-          <a href="/contact/" class="nav-item block py-2 text-purple-600 dark:text-purple-400 {% if isContact %}underline font-semibold{% endif %}"
-             {% if isContact %}aria-current="page"{% endif %}>💬 Contact</a>
-        </li>
+        {% for item in navItems %}
+          {% set isActive = (item.path == '/' and url == '/') or (item.path != '/' and (url | slice(0, item.path | length) == item.path)) %}
+          <li>
+            <a href="{{ item.path }}" class="nav-item block py-2 text-red-600 dark:text-red-400 {% if isActive %}underline font-semibold{% endif %}"
+               {% if isActive %}aria-current="page"{% endif %}>{{ item.icon }} {{ item.title }}</a>
+          </li>
+        {% endfor %}
       </ul>
     </div>
   </nav>
 
-  <div class="container mx-auto px-4 py-6 max-w-4xl flex-1">
+  <div class="mx-auto px-4 py-6 lg:max-w-6xl 2xl:max-w-7xl flex-1">
     <main>
       {{ content | safe }}
     </main>
   </div>
 
   <footer class="bg-[var(--surface)] border-t border-gray-200 dark:border-gray-700 mt-12">
-    <div class="container mx-auto px-4 py-8 max-w-4xl">
+    <div class="mx-auto px-4 py-8 lg:max-w-6xl 2xl:max-w-7xl">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
         <div>
           <h3 class="font-semibold mb-2">Technical</h3>
