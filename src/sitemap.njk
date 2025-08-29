@@ -13,13 +13,13 @@ title: Site Directory
 
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
     <!-- Main Pages -->
-    <div class="bg-[var(--surface)] rounded-lg p-6 border border-purple-200 dark:border-purple-800">
-      <h2 class="text-lg font-semibold mb-4 text-purple-700 dark:text-purple-300">📚 Main Pages</h2>
+    <div class="bg-[var(--surface)] rounded-lg p-6 border border-red-200 dark:border-red-800">
+      <h2 class="text-lg font-semibold mb-4 text-red-700 dark:text-red-300">📚 Main Pages</h2>
       <ul class="space-y-2">
-        <li><a href="/" class="flex items-center gap-2 hover:text-purple-600 dark:hover:text-purple-400">🏠 Home</a></li>
-        <li><a href="/blog/" class="flex items-center gap-2 hover:text-purple-600 dark:hover:text-purple-400">✍️ Blog</a></li>
-        <li><a href="/about/" class="flex items-center gap-2 hover:text-purple-600 dark:hover:text-purple-400">👋 About</a></li>
-        <li><a href="/contact/" class="flex items-center gap-2 hover:text-purple-600 dark:hover:text-purple-400">💬 Contact</a></li>
+        <li><a href="/" class="flex items-center gap-2 hover:text-red-600 dark:hover:text-red-400">🏠 Home</a></li>
+        <li><a href="/blog/" class="flex items-center gap-2 hover:text-red-600 dark:hover:text-red-400">✍️ Blog</a></li>
+        <li><a href="/about/" class="flex items-center gap-2 hover:text-red-600 dark:hover:text-red-400">👋 About</a></li>
+        <li><a href="/contact/" class="flex items-center gap-2 hover:text-red-600 dark:hover:text-red-400">💬 Contact</a></li>
       </ul>
     </div>
 
@@ -32,7 +32,7 @@ title: Site Directory
         <li><a href="/donate/" class="flex items-center gap-2 hover:text-blue-600 dark:hover:text-blue-400">💖 Support</a></li>
         <li><a href="/notes/" class="flex items-center gap-2 hover:text-blue-600 dark:hover:text-blue-400">🗒️ Notes</a></li>
         <li><a href="/journal/" class="flex items-center gap-2 hover:text-blue-600 dark:hover:text-blue-400">📓 Journal</a></li>
-        <li><a href="/poetry/" class="flex items-center gap-2 hover:text-blue-600 dark:hover:text-blue-400">🖋️ Poetry</a></li>
+        
       </ul>
     </div>
 
@@ -69,8 +69,8 @@ title: Site Directory
     </div>
 
     <!-- Recent Posts -->
-    <div class="bg-[var(--surface)] rounded-lg p-6 border border-pink-200 dark:border-pink-800 md:col-span-2">
-      <h2 class="text-lg font-semibold mb-4 text-pink-700 dark:text-pink-300">📝 Recent Posts</h2>
+    <div class="bg-[var(--surface)] rounded-lg p-6 border border-red-200 dark:border-red-800 md:col-span-2">
+      <h2 class="text-lg font-semibold mb-4 text-red-700 dark:text-red-300">📝 Recent Posts</h2>
 
       {# Fallback to searchIndex like homepage if posts collection is empty #}
       {% set recent = collections.posts | default([]) %}
@@ -84,7 +84,7 @@ title: Site Directory
         {% set url = post.url or post.id %}
         {% set title = (post.data and post.data.title) or post.title %}
         <li>
-          <a href="{{ url }}" class="block hover:text-pink-600 dark:hover:text-pink-400">
+          <a href="{{ url }}" class="block hover:text-red-600 dark:hover:text-red-400">
             <span class="font-medium">{{ title }}</span>
             {% if post.date %}
             <span class="text-sm text-gray-500 dark:text-gray-400 block">{{ post.date | readableDate }}</span>
@@ -110,11 +110,11 @@ title: Site Directory
     </div>
   </div>
 
-  <div class="mt-12 p-6 bg-gradient-to-r from-purple-100 to-pink-100 dark:from-purple-900/20 dark:to-pink-900/20 rounded-lg">
+  <div class="mt-12 p-6 bg-gradient-to-r from-red-100 to-rose-100 dark:from-red-900/20 dark:to-rose-900/20 rounded-lg">
     <h2 class="text-xl font-semibold mb-2">🧭 Lost?</h2>
     <p class="text-gray-700 dark:text-gray-300">
-      This site is built with <a href="https://11ty.dev" class="text-purple-600 dark:text-purple-400 hover:underline">Eleventy</a> 
-      and follows <a href="https://indieweb.org" class="text-purple-600 dark:text-purple-400 hover:underline">IndieWeb</a> principles. 
+      This site is built with <a href="https://11ty.dev" class="text-red-600 dark:text-red-400 hover:underline">Eleventy</a> 
+      and follows <a href="https://indieweb.org" class="text-red-600 dark:text-red-400 hover:underline">IndieWeb</a> principles. 
       It's designed to be a calm, thoughtful space for writing and connecting.
     </p>
   </div>

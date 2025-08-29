@@ -16,12 +16,12 @@ title: "Search Results"
         name="q" 
         type="search" 
         placeholder="Search posts, pages, and content..." 
-        class="flex-1 px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+        class="flex-1 px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-red-500 focus:border-transparent"
         autocomplete="off"
       />
       <button 
         type="submit" 
-        class="px-6 py-3 bg-purple-600 hover:bg-purple-700 text-white rounded-lg transition-colors font-medium"
+        class="px-6 py-3 bg-red-600 hover:bg-red-700 text-white rounded-lg transition-colors font-medium"
       >
         Search
       </button>
@@ -47,7 +47,7 @@ title: "Search Results"
       Try different keywords or browse our content below.
     </p>
     <div class="flex flex-wrap justify-center gap-4">
-      <a href="/blog/" class="px-4 py-2 bg-purple-100 dark:bg-purple-900/30 text-purple-800 dark:text-purple-200 rounded-lg hover:bg-purple-200 dark:hover:bg-purple-900/50 transition-colors">
+      <a href="/blog/" class="px-4 py-2 bg-red-100 dark:bg-red-900/30 text-red-800 dark:text-red-200 rounded-lg hover:bg-red-200 dark:hover:bg-red-900/50 transition-colors">
         Browse All Posts
       </a>
       <a href="/archive/" class="px-4 py-2 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-200 rounded-lg hover:bg-blue-200 dark:hover:bg-blue-900/50 transition-colors">
@@ -78,12 +78,12 @@ title: "Search Results"
     <!-- Popular content -->
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
       <div class="bg-[var(--surface)] rounded-lg p-6 border border-gray-200 dark:border-gray-700">
-        <h3 class="text-lg font-semibold mb-4 text-purple-700 dark:text-purple-300">📝 Recent Posts</h3>
+        <h3 class="text-lg font-semibold mb-4 text-red-700 dark:text-red-300">📝 Recent Posts</h3>
         {% if collections.posts.length > 0 %}
         <ul class="space-y-2">
           {% for post in collections.posts | slice(0, 5) %}
           <li>
-            <a href="{{ post.url }}" class="block hover:text-purple-600 dark:hover:text-purple-400 transition-colors">
+            <a href="{{ post.url }}" class="block hover:text-red-600 dark:hover:text-red-400 transition-colors">
               <span class="font-medium">{{ post.data.title }}</span>
               <span class="text-sm text-gray-500 dark:text-gray-400 block">{{ post.date | readableDate }}</span>
             </a>
@@ -112,7 +112,7 @@ title: "Search Results"
     </div>
 
     <!-- Search tips -->
-    <div class="bg-gradient-to-r from-purple-100 to-pink-100 dark:from-purple-900/20 dark:to-pink-900/20 rounded-lg p-6">
+    <div class="bg-gradient-to-r from-red-100 to-rose-100 dark:from-red-900/20 dark:to-rose-900/20 rounded-lg p-6">
       <h3 class="text-lg font-semibold mb-3">💡 Search Tips</h3>
       <ul class="text-sm space-y-1 text-gray-700 dark:text-gray-300">
         <li>• Use specific keywords for better results</li>
@@ -230,7 +230,7 @@ title: "Search Results"
     container.innerHTML = items.map(item => `
       <article class="border-b border-gray-200 dark:border-gray-700 pb-6 last:border-b-0">
         <h2 class="text-xl font-semibold mb-2">
-          <a href="${item.id}" class="hover:text-purple-600 dark:hover:text-purple-400 transition-colors">
+          <a href="${item.id}" class="hover:text-red-600 dark:hover:text-red-400 transition-colors">
             ${highlightMatch(item.title, query)}
           </a>
         </h2>
