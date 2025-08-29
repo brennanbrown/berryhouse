@@ -1,7 +1,7 @@
 ---
 layout: layouts/base.njk
 permalink: "/"
-title: "Indieweb Starter Blog"
+title: "Strawberry Collective — Web & Writing"
 ---
 <div class="h-feed">
   <!-- Hero Section -->
@@ -10,14 +10,14 @@ title: "Indieweb Starter Blog"
     <p class="p-summary text-xl text-gray-600 dark:text-gray-400 mb-6">{{ site.description }}</p>
     <a class="u-url hidden" href="{{ site.url }}/"></a>
     
-    <div class="max-w-2xl mx-auto mb-8">
+    <div class="max-w-4xl md:max-w-5xl mx-auto mb-8">
       <p class="text-lg leading-relaxed text-gray-700 dark:text-gray-300 mb-6">
-        Welcome to my corner of the independent web! This is where I share thoughts, discoveries, and conversations 
-        away from the noise of social media algorithms. 
+        Strawberry Collective builds fast, accessible JAMstack websites and thoughtful, effective writing. 
+        We help independent creators, non‑profits, and small teams communicate clearly and own their platform.
       </p>
       
       <div class="flex flex-wrap justify-center gap-4 text-sm">
-        <span class="bg-purple-100 dark:bg-purple-900/30 text-purple-800 dark:text-purple-200 px-3 py-1 rounded-full">
+        <span class="bg-red-100 dark:bg-red-900/30 text-red-800 dark:text-red-200 px-3 py-1 rounded-full">
           🌱 IndieWeb
         </span>
         <span class="bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-200 px-3 py-1 rounded-full">
@@ -30,13 +30,121 @@ title: "Indieweb Starter Blog"
           ♿ Accessible
         </span>
       </div>
+
+  <!-- What We Do -->
+  <section class="mt-16">
+    <h2 class="text-2xl font-semibold mb-6 flex items-center gap-2">
+      🍓 What we do
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="bg-[var(--surface)] border border-gray-200 dark:border-gray-700 rounded-lg p-6">
+        <h3 class="text-lg font-semibold mb-2">Websites</h3>
+        <p class="text-gray-700 dark:text-gray-300 mb-4">Fast, accessible, and independent websites built with Eleventy and Tailwind. Own your platform and keep things simple.</p>
+        <ul class="text-sm text-gray-600 dark:text-gray-400 space-y-1">
+          <li>• Custom themes and brand systems</li>
+          <li>• Content migrations and SEO</li>
+          <li>• Performance and accessibility audits</li>
+        </ul>
+      </div>
+      <div class="bg-[var(--surface)] border border-gray-200 dark:border-gray-700 rounded-lg p-6">
+        <h3 class="text-lg font-semibold mb-2">Writing</h3>
+        <p class="text-gray-700 dark:text-gray-300 mb-4">Clarity that converts. We help you say the right thing to the right people with editorial strategy and hands‑on copy.</p>
+        <ul class="text-sm text-gray-600 dark:text-gray-400 space-y-1">
+          <li>• Website copy & information architecture</li>
+          <li>• Articles, newsletters, and documentation</li>
+          <li>• Editing, style guides, and governance</li>
+        </ul>
+      </div>
+      <div class="bg-[var(--surface)] border border-gray-200 dark:border-gray-700 rounded-lg p-6">
+        <h3 class="text-lg font-semibold mb-2">Education</h3>
+        <p class="text-gray-700 dark:text-gray-300 mb-4">Workshops and 1:1 sessions to build skills and confidence—publishing workflows, accessibility, and sustainable content.</p>
+        <ul class="text-sm text-gray-600 dark:text-gray-400 space-y-1">
+          <li>• IndieWeb and digital autonomy</li>
+          <li>• Jamstack publishing workflows</li>
+          <li>• Accessible content practices</li>
+        </ul>
+      </div>
+    </div>
+    <div class="mt-6">
+      <a href="/services/" class="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white px-5 py-2 rounded-lg transition-colors">Explore services →</a>
+    </div>
+  </section>
+
+  <!-- Why Strawberry Collective -->
+  <section class="mt-16">
+    <h2 class="text-2xl font-semibold mb-6 flex items-center gap-2">✨ Why Strawberry Collective?</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-lg p-6">
+        <h3 class="font-semibold mb-2">Human‑centered by design</h3>
+        <p class="text-gray-700 dark:text-gray-300">Content first, technology second. We prioritize clarity, accessibility, and longevity over trends.</p>
+      </div>
+      <div class="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-lg p-6">
+        <h3 class="font-semibold mb-2">Own your platform</h3>
+        <p class="text-gray-700 dark:text-gray-300">No lock‑in. Plain files, simple pipelines, and hosting you can move. Your content stays yours.</p>
+      </div>
+      <div class="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-lg p-6">
+        <h3 class="font-semibold mb-2">Accessible and fast</h3>
+        <p class="text-gray-700 dark:text-gray-300">Performance, semantic HTML, and inclusive writing baked in from day one—not bolted on later.</p>
+      </div>
+      <div class="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-lg p-6">
+        <h3 class="font-semibold mb-2">Calm, sustainable websites</h3>
+        <p class="text-gray-700 dark:text-gray-300">Low overhead, low maintenance. You shouldn’t need a team to publish or keep things running.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Process -->
+  <section class="mt-16">
+    <h2 class="text-2xl font-semibold mb-6 flex items-center gap-2">🧭 Our process</h2>
+    <ol class="grid grid-cols-1 md:grid-cols-4 gap-6">
+      <li class="bg-[var(--surface)] border border-gray-200 dark:border-gray-700 rounded-lg p-5">
+        <div class="text-sm text-gray-500">01</div>
+        <h3 class="font-semibold mt-1 mb-2">Discovery</h3>
+        <p class="text-gray-700 dark:text-gray-300">Goals, audience, and constraints. We define success together.</p>
+      </li>
+      <li class="bg-[var(--surface)] border border-gray-200 dark:border-gray-700 rounded-lg p-5">
+        <div class="text-sm text-gray-500">02</div>
+        <h3 class="font-semibold mt-1 mb-2">Structure</h3>
+        <p class="text-gray-700 dark:text-gray-300">Information architecture, content model, and tone of voice.</p>
+      </li>
+      <li class="bg-[var(--surface)] border border-gray-200 dark:border-gray-700 rounded-lg p-5">
+        <div class="text-sm text-gray-500">03</div>
+        <h3 class="font-semibold mt-1 mb-2">Build</h3>
+        <p class="text-gray-700 dark:text-gray-300">Accessible templates, performance, and content workflows.</p>
+      </li>
+      <li class="bg-[var(--surface)] border border-gray-200 dark:border-gray-700 rounded-lg p-5">
+        <div class="text-sm text-gray-500">04</div>
+        <h3 class="font-semibold mt-1 mb-2">Launch & teach</h3>
+        <p class="text-gray-700 dark:text-gray-300">We ship, measure, and train your team to run with it.</p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- CTA Band -->
+  <section class="mt-16">
+    <div class="bg-gradient-to-r from-red-100 to-rose-100 dark:from-red-900/20 dark:to-rose-900/20 p-6 rounded-xl border border-red-200/60 dark:border-red-900/40">
+      <div class="md:flex items-center justify-between gap-6">
+        <div class="mb-4 md:mb-0">
+          <h3 class="text-xl font-semibold mb-1">Let’s build something that lasts</h3>
+          <p class="text-gray-700 dark:text-gray-300">Start with a short call to see if we’re a fit. No pressure, no jargon.</p>
+        </div>
+        <div class="flex gap-3">
+          <a href="/services/" class="bg-red-600 hover:bg-red-700 text-white px-5 py-2 rounded-lg transition-colors">View services</a>
+          <a href="/about/" class="border border-red-600 text-red-600 hover:bg-red-50 dark:hover:bg-red-900/20 px-5 py-2 rounded-lg transition-colors">About us</a>
+        </div>
+      </div>
+    </div>
+  </section>
     </div>
 
     <div class="flex flex-wrap justify-center gap-4">
-      <a href="/about/" class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-lg transition-colors">
-        👋 Learn more about me
+      <a href="/services/" class="bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-lg transition-colors">
+        🧰 See our services
       </a>
-      <a href="/feed.xml" class="border border-purple-600 text-purple-600 hover:bg-purple-50 dark:hover:bg-purple-900/20 px-6 py-2 rounded-lg transition-colors">
+      <a href="/about/" class="border border-red-600 text-red-600 hover:bg-red-50 dark:hover:bg-red-900/20 px-6 py-2 rounded-lg transition-colors">
+        👋 About Strawberry Collective
+      </a>
+      <a href="/feed.xml" class="border border-red-600 text-red-600 hover:bg-red-50 dark:hover:bg-red-900/20 px-6 py-2 rounded-lg transition-colors">
         📡 Subscribe via RSS
       </a>
     </div>
@@ -63,7 +171,7 @@ title: "Indieweb Starter Blog"
         {% set tags = (post.data and post.data.tags) or post.tags or [] %}
         <article class="h-entry border-b border-gray-200 dark:border-gray-700 pb-6 last:border-b-0">
           <h3 class="p-name text-xl font-semibold mb-2">
-            <a class="u-url hover:text-purple-600 dark:hover:text-purple-400 transition-colors" href="{{ url }}">
+            <a class="u-url hover:text-red-600 dark:hover:text-red-400 transition-colors" href="{{ url }}">
               {{ title }}
             </a>
           </h3>
@@ -91,7 +199,7 @@ title: "Indieweb Starter Blog"
     </div>
 
     <div class="text-center mt-8">
-      <a href="/blog/" class="inline-flex items-center gap-2 text-purple-600 dark:text-purple-400 hover:underline">
+      <a href="/blog/" class="inline-flex items-center gap-2 text-red-600 dark:text-red-400 hover:underline">
         View all posts →
       </a>
     </div>
@@ -117,10 +225,10 @@ title: "Indieweb Starter Blog"
       <p class="text-sm text-green-600 dark:text-green-300">Hardware, software, and setup</p>
     </a>
     
-    <a href="/sitemap/" class="block p-4 bg-purple-50 dark:bg-purple-900/20 rounded-lg hover:bg-purple-100 dark:hover:bg-purple-900/30 transition-colors">
+    <a href="/sitemap/" class="block p-4 bg-red-50 dark:bg-red-900/20 rounded-lg hover:bg-red-100 dark:hover:bg-red-900/30 transition-colors">
       <div class="text-2xl mb-2">🗺️</div>
-      <h3 class="font-semibold text-purple-800 dark:text-purple-200">Explore this site</h3>
-      <p class="text-sm text-purple-600 dark:text-purple-300">Complete directory of pages</p>
+      <h3 class="font-semibold text-red-800 dark:text-red-200">Explore this site</h3>
+      <p class="text-sm text-red-600 dark:text-red-300">Complete directory of pages</p>
     </a>
   </div>
 </div>
