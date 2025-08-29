@@ -1,0 +1,14 @@
+{
+  "items": [
+    { "title": "Home", "path": "/", "icon": "🏠" },
+    { "title": "About", "path": "/about/", "icon": "👋" },
+    { "title": "Services", "path": "/services/", "icon": "🧰" },
+    { "title": "Portfolio", "path": "/portfolio/", "icon": "🗂️" },
+    { "title": "Education", "path": "/education/", "icon": "🎓" },
+    { "title": "Blog", "path": "/blog/", "icon": "✍️" },
+    { "title": "Notes", "path": "/notes/", "icon": "📝" },
+    { "title": "Journal", "path": "/journal/", "icon": "📔" },
+    { "title": "Showcase", "path": "/showcase/", "icon": "🌐" },
+    { "title": "Contact", "path": "/contact/", "icon": "💬" }
+  ]
+}

@@ -1,47 +1,47 @@
 {
-  "name": "Indieweb Starter Blog",
-  "description": "Stop doomscrolling, start creating. Own a part of the Internet again.",
-  "url": "https://indieweb-template.netlify.app",
-  "author": "Your Name",
-  "email": "your@email.com",
+  "name": "🍓 Strawberry Collective",
+  "description": "Hi. We're here to help you create and share meaningful work and art with the world. Whether you're looking to amplify your writing or build an independent website, we're here to help.",
+  "url": "https://strawberrycollective.netlify.app",
+  "author": "Brennan Kenneth Brown",
+  "email": "mail@brennanbrown.ca",
   "social": {
-    "github": "yourusername",
-    "mastodon": "@yourhandle@mastodon.social",
-    "twitter": "@yourhandle"
+    "github": "brennanbrown",
+    "mastodon": "",
+    "twitter": ""
   },
   "repo": {
-    "url": "https://github.com/brennanbrown/11ty-Indie-Web-Blog-Starter",
+    "url": "https://github.com/brennanbrown/strawberry-collective",
     "branch": "main"
   },
   "bio": {
-    "short": "Writer, thinker, and digital minimalist",
-    "long": "I'm passionate about thoughtful writing, meaningful connections, and building a more human web. This is my corner of the internet where I share ideas, experiences, and discoveries."
+    "short": "Queer Métis JAMstack developer, writer, and advocate for a human-centric web.",
+    "long": "I'm Brennan Kenneth Brown, a Queer Métis English Honours graduate, writer, and JAMstack open-source web developer. I'm building an online writing career while returning to web development and blog theme creation. My work—both writing and development—is intended to be useful, accessible, and beneficial to others, focusing on building connections and expanding networks. This is my corner of the internet where I share ideas, experiences, and discoveries, championing digital autonomy, creativity, and meaningfulness online."
   },
-  "location": "Your City, Country",
-  "timezone": "America/Los_Angeles",
+  "location": "Calgary, Alberta, Canada",
+  "timezone": "America/Edmonton",
   "newsletter": {
     "enabled": true,
-    "provider": "buttondown",
-    "action": "https://buttondown.email/api/emails/embed-subscribe/yourusername",
-    "title": "Join the Newsletter",
-    "description": "Get thoughtful updates delivered to your inbox. No spam, just meaningful content."
+    "provider": "substack",
+    "action": "https://brennanbrown.substack.com/embed",
+    "title": "Join the IndieGarden Newsletter",
+    "description": "Get thoughtful essays and updates on digital writing, JAMstack, and the IndieWeb delivered to your inbox. No spam ever."
   },
   "donate": {
     "enabled": true,
-    "kofi": "yourusername",
-    "buymeacoffee": "yourusername",
-    "github": "yourusername",
-    "message": "If you find value in my writing, consider supporting my work. Every contribution helps me continue creating thoughtful content."
+    "kofi": "",
+    "buymeacoffee": "",
+    "github": "brennanbrown",
+    "message": "If you find value in my work and the mission of IndieGarden, consider supporting my efforts. Every contribution helps me continue creating thoughtful work and providing accessible services."
   },
   "analytics": {
-    "enabled": false,
+    "enabled": true,
     "provider": "plausible",
-    "domain": "",
+    "domain": "strawberrycollective.netlify.app",
     "siteId": ""
   },
   "webmentions": {
     "enabled": true,
-    "domain": ""
+    "domain": "indiegarden.netlify.app"
   },
   "webring": {
     "enabled": false,
@@ -50,21 +50,24 @@
   "lighthouse": {
     "enabled": false,
     "url": "https://pagespeed.web.dev/"
-  },
+  }, 
   "indieweb": {
     "h_card": true,
     "rel_me": true,
     "microformats": true
   },
   "sections": {
-    "notes": { "enabled": true, "title": "Notes", "path": "/notes/" },
+    "notes": { "enabled": true, "title": "Digital Garden", "path": "/garden/" },
     "journal": { "enabled": true, "title": "Journal", "path": "/journal/" },
-    "poetry": { "enabled": true, "title": "Poetry", "path": "/poetry/" },
+    "poetry": { "enabled": false, "title": "Poetry", "path": "/poetry/" },
     "portfolio": { "enabled": true, "title": "Portfolio", "path": "/portfolio/" },
     "projects": { "enabled": true, "title": "Projects", "path": "/projects/" },
     "resume": { "enabled": true, "title": "Résumé", "path": "/resume/" },
-    "type": { "enabled": true, "title": "Type", "path": "/type/" },
+    "type": { "enabled": false, "title": "Type", "path": "/type/" },
     "links": { "enabled": true, "title": "Links", "path": "/links/" },
-    "bookshelf": { "enabled": true, "title": "Bookshelf", "path": "/bookshelf/" }
+    "bookshelf": { "enabled": true, "title": "Bookshelf", "path": "/bookshelf/" },
+    "services": { "enabled": true, "title": "Services", "path": "/services/" },
+    "education": { "enabled": true, "title": "Education Hub", "path": "/education/" },
+    "showcase": { "enabled": true, "title": "Community Showcase", "path": "/showcase/" }
   }
 }
