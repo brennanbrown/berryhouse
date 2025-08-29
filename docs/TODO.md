@@ -7,21 +7,21 @@ This is a living task list to implement the spec in `_IMPORTANT/spec_sheet.md` a
 - Keep entries concise. Link files like `src/...` or docs in `_IMPORTANT/`.
 
 ## 1) Information Architecture & Routing
-- [~] Confirm top-level pages and routes: Home, About, Services, Portfolio, Education, Blog, Garden, Contact, Showcase (`src/`)  
-  ↳ Stubs added: `services`, `education`, `showcase`; others already present
-- [ ] Define collections for blog and garden (`.eleventy.js` / `src/_data/`)
+- [x] Confirm top-level pages and routes: Home, About, Services, Portfolio, Education, Blog, Garden, Contact, Showcase (`src/`)  
+  ↳ Stubs/pages added and wired: `services`, `education`, `showcase`; others already present
+- [~] Define collections: Blog [x] done; Garden [ ] pending (`.eleventy.js` / `src/_data/`)
 - [x] Add navigation data: `src/_data/navigation.*` (`navigation.json` + layout wired)
 
 ## 2) Content Drafting (from spec + business docs)
-- [ ] Home: headline, value prop, CTAs (corporate + non-profit), recent posts (`src/` page)
-- [ ] About: bio + mission/vision/values from `business_plan.md` and `about_me.md`
-- [~] Services: dev + writing; dual-audience model details from `business_plan.md` (stub page created)
-- [ ] Portfolio: case-study template; seed with items from `my_projects.md`
-- [~] Education: JAMstack / IndieWeb / Digital Garden primers (hub page created)
+- [x] Home: headline, value prop, CTAs, recent posts (`src/index.njk`)
+- [x] About: bio + mission/vision/values from `business_plan.md` and `about_me.md`
+- [x] Services: dev + writing; dual-audience model details from `business_plan.md`
+- [x] Portfolio: case-study template; seeded with items from `my_projects.md`
+- [x] Education: JAMstack / IndieWeb / Digital Garden primers (hub page + primers)
 - [ ] Blog: initial 2–3 posts (from existing `src/blog/` or drafts)
 - [ ] Garden: initial 3 notes and backlinks
 - [ ] Contact: forms + booking links
-- [~] Showcase: curated sites; submission blurb (align with `showcase_recommendations.md`) (page created)
+- [x] Showcase: curated sites; submission blurb (align with `showcase_recommendations.md`)
 
 ## 3) Components & Layout
 - [x] Validate base layout and partials exist: `src/_includes/layouts/`, `partials/` (nav now data-driven)
@@ -29,8 +29,8 @@ This is a living task list to implement the spec in `_IMPORTANT/spec_sheet.md` a
 - [ ] Sidebar (mobile-first, hamburger reveal)
 
 ## 4) Styling & Branding
-- [ ] Tailwind theme: colors, typography (bold serif headings, modern sans body)
-- [ ] Add fun gradient utilities and examples
+- [~] Tailwind theme: brand color updated to red; typography refinements pending
+- [~] Add gradient utilities and examples (CTA band added; more examples pending)
 - [ ] Emoji logo usage (🍓) and favicon pipeline (`scripts/generate-icons.js`)
 
 ## 5) Integrations
@@ -41,7 +41,7 @@ This is a living task list to implement the spec in `_IMPORTANT/spec_sheet.md` a
 
 ## 6) Performance, SEO, Accessibility
 - [ ] Images: responsive + lazyload + WebP
-- [ ] Meta, sitemap, structured data; confirm feeds
+- [x] Meta, sitemap, structured data; confirm feeds
 - [ ] Pass existing Playwright a11y tests; add headings/nav landmark checks
 
 ## 7) CMS (Optional)
@@ -57,13 +57,13 @@ This is a living task list to implement the spec in `_IMPORTANT/spec_sheet.md` a
 - [ ] DNS/Domain mapping plan (later)
 
 ## 10) Documentation
-- [ ] Update `README.md` with project-specific instructions
-- [ ] Maintain `_IMPORTANT/CHANGELOG.md` entries per change
+- [x] Update `README.md` with project-specific instructions
+- [x] Maintain `docs/CHANGELOG.md` entries per change
 
 ---
 
 ### Active Work
-- [~] Initialize TODO and CHANGELOG; review key `_IMPORTANT/*.md` docs
+- [~] Replace placeholder URLs (Calendly, Discord, Patreon) and conduct final visual/a11y pass
 
 ### Parking Lot
 - [ ] Microformats/webmentions (IndieWeb blocks)

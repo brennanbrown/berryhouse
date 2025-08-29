@@ -5,6 +5,29 @@ All notable changes to this project will be documented in this file.
 ## [Unreleased]
 - Project scaffolding and alignment work in progress per `_IMPORTANT/spec_sheet.md`.
 
+## 2025-08-28
+- Homepage expansion (`src/index.njk`):
+  - Added sections: What we do, Why Strawberry Collective, Our process, CTA band.
+  - Widened hero text area; improved CTAs and quick links.
+- Layout width improvements (`src/_includes/layouts/base.njk`):
+  - Increased desktop max-widths for header, nav, main, and footer; removed `container` caps.
+- Branding sweep to red:
+  - Updated remaining purple accents to red in `src/assets/css/tailwind.css`, `src/search-results.njk`, `src/style.njk`, `src/categories.njk`, `src/sitemap.njk`, and partials.
+- Page copy and CTAs refreshed:
+  - `src/services.njk`, `src/about.njk`, `src/education.njk`, `src/showcase.njk`, `src/portfolio.njk`.
+- Data & partials:
+  - Added `src/_data/navigation.json` and wired navigation.
+  - Added `src/_data/testimonials.json` and `src/_includes/partials/testimonials.njk`.
+- Build/config:
+  - Fixed Eleventy build by adding `head` Nunjucks filter in `.eleventy.js`.
+- Assets & scripts:
+  - Added default OG image and supporting assets; minor `scripts/fetch-assets.js` refinements.
+- Docs & CI:
+  - Moved TODO and CHANGELOG to `docs/`.
+  - Added `docs/spec-sheet-for-theme.md`; removed outdated `docs/spec-sheet.md`.
+  - Removed outdated GitHub Actions workflows.
+  - Expanded `.gitignore`.
+
 ## 2025-08-27
 - Implemented data-driven navigation via `src/_data/navigation.json` and updated `base.njk` to render from data.
 - Added new pages: `src/services.njk`, `src/education.njk`, `src/showcase.njk`.
