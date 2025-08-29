@@ -1,12 +1,13 @@
 ---
 layout: layouts/base.njk
 title: Poetry
+eleventyExcludeFromCollections: true
 pagination:
   data: collections.poetry
   size: 10
   alias: items
   reverse: true
-permalink: "/poetry/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber + 1 }}/{% endif %}"
+permalink: false
 ---
 
 <h1 class="text-2xl font-bold mb-4">Poetry</h1>
