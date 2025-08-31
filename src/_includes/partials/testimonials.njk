@@ -7,8 +7,12 @@
 {%- endmacro %}
 
 <section class="not-prose mt-8" aria-labelledby="testimonials-heading">
-  <h2 id="testimonials-heading" class="text-xl font-semibold mb-4">Testimonials</h2>
-  <ul class="grid gap-4 md:grid-cols-2">
+  <details class="group border rounded-lg bg-white dark:bg-gray-900 border-red-200/60 dark:border-red-900/40">
+    <summary class="flex items-center justify-between cursor-pointer list-none px-4 py-3">
+      <h2 id="testimonials-heading" class="text-xl font-semibold">Testimonials</h2>
+      <span class="text-sm text-gray-600 dark:text-gray-400">{{ (testimonials | default([])).length }} total ▾</span>
+    </summary>
+  <ul class="grid gap-4 md:grid-cols-2 px-4 pb-4">
     {% for t in testimonials | default([]) %}
       <li class="p-4 rounded border bg-white dark:bg-gray-900 flex gap-3">
         {% if t.profile_picture %}
@@ -22,4 +26,5 @@
       </li>
     {% endfor %}
   </ul>
+  </details>
 </section>
