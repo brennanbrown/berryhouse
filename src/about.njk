@@ -4,55 +4,52 @@ permalink: "/about/"
 title: About
 ---
 <section class="prose dark:prose-invert">
-  <div class="h-card not-prose">
-    <img class="u-photo w-24 h-24 rounded-full" src="/assets/profile.jpg" alt="{{ site.author }}" />
-    <h1 class="p-name text-2xl font-bold mt-2">{{ site.author }}</h1>
-    <div class="contact-info mt-2 flex flex-wrap gap-3 items-center">
-      {% from "partials/icons.njk" import icon %}
-      <a class="u-url inline-flex items-center gap-1" href="{{ site.url }}" rel="me">
-        {{ icon('link','w-4 h-4') }} <span>{{ site.url | replace('https://', '') | replace('http://', '') }}</span>
-      </a>
-      <a class="u-email inline-flex items-center gap-1" href="mailto:{{ site.email }}">
-        {{ icon('mail','w-4 h-4') }} <span>{{ site.email }}</span>
-      </a>
-      {% if site.social.github %}
-      <a class="u-url inline-flex items-center gap-1" rel="me" href="https://github.com/{{ site.social.github }}">
-        {{ icon('github','w-4 h-4') }} <span>GitHub</span>
-      </a>
-      {% endif %}
-      {% if site.social.twitter %}
-      <a class="u-url inline-flex items-center gap-1" rel="me" href="https://twitter.com/{{ site.social.twitter | replace('@','') }}">
-        {{ icon('x','w-4 h-4') }} <span>Twitter</span>
-      </a>
-      {% endif %}
+  <header class="not-prose mb-10">
+    <h1 class="text-3xl font-extrabold tracking-tight">Strawberry Collective</h1>
+    <p class="text-gray-700 dark:text-gray-300 mt-2 max-w-2xl">We’re a small, values‑driven studio building fast, accessible websites and community‑centered content. We help independent creators and mission‑led orgs publish with clarity and care.</p>
+  </header>
+
+  <h2>Why we started this initiative</h2>
+  <p>We’re carving out a humane corner of the internet—one that values autonomy, creativity, and long‑term stewardship over growth at all costs. Our work combines lean, privacy‑respecting tech (Eleventy/JAMstack) with editorial craft and community engagement. We ship small, sustainable projects that people can actually own.</p>
+
+  <div class="not-prose my-10">
+    <div class="grid md:grid-cols-2 gap-8">
+      <article class="p-5 rounded-xl border border-red-200/60 dark:border-red-900/40 bg-[var(--surface)]">
+        <div class="flex items-start gap-4">
+          <img src="/assets/photos/brennan.jpg" alt="Headshot of Brennan Kenneth Brown" class="w-24 h-24 rounded-xl object-cover border" loading="lazy" />
+          <div>
+            <h3 class="text-xl font-semibold">Brennan Kenneth Brown</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-400">Founder • Lead Developer • Lead Writer</p>
+            <p class="mt-2 text-gray-800 dark:text-gray-200">Queer Métis JAMstack dev and content strategist. Builds small, fast, accessible sites and clear content systems. English Honours (MRU, 2025); growth marketing and full‑stack training. Community builder behind Write Club, championing voice, access, and long‑term stewardship.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="p-5 rounded-xl border border-red-200/60 dark:border-red-900/40 bg-[var(--surface)]">
+        <div class="flex items-start gap-4">
+          <img src="/assets/photos/yvonne.jpg" alt="Headshot of Emma Yvonne Berger" class="w-24 h-24 rounded-xl object-cover border" loading="lazy" />
+          <div>
+            <h3 class="text-xl font-semibold">Emma Yvonne Berger</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-400">Co‑founder • Director of Community Engagement</p>
+            <p class="mt-2 text-gray-800 dark:text-gray-200">Equity‑oriented community engagement professional (BA Psychology Hons, Social Innovation minor). Leads research‑informed outreach, intergenerational bridge‑building, and EDIJR‑aligned practices. Experience across Youthful Cities, Nonprofit Chamber, and Global Shapers Calgary.</p>
+          </div>
+        </div>
+      </article>
     </div>
-    <p class="p-locality mt-2">Calgary, Alberta, Canada</p>
   </div>
 
-  <p>
-    Hi! I'm Brennan, a Queer Métis JAMstack developer and content strategist. I build small, fast, and accessible websites—and help people ship meaningful content with clarity and care. English Honours (MRU, 2025), InceptionU Full‑Stack (2020), and OnRamp Growth Marketing (2022).
-  </p>
-
-  <h2>Mission</h2>
-  <p>Serve as an authoritative yet warm and inviting recourse from the homogenized, algorithm‑driven internet by prioritizing digital autonomy, creativity, privacy, and meaningfulness.</p>
-
-  <h2>Vision</h2>
-  <p>Cultivate a hub that educates, inspires, and showcases expertise in JAMstack, IndieWeb, and Digital Gardens—championing a more human‑centric, decentralized web.</p>
-
-  <h2>Values</h2>
+  <h2>How we work</h2>
   <ul>
-    <li><strong>Digital Autonomy</strong>: Own your data, identity, and content.</li>
-    <li><strong>Creativity & Expression</strong>: Champion unique designs and personal voice.</li>
-    <li><strong>Accessibility & Inclusivity</strong>: Make tools and knowledge available to everyone.</li>
-    <li><strong>Authenticity & Meaningfulness</strong>: Foster genuine connections and purposeful content.</li>
-    <li><strong>Openness & Collaboration</strong>: Share knowledge and build community.</li>
-    <li><strong>Quality & Craftsmanship</strong>: Pair technical excellence with clear communication.</li>
+    <li><strong>Small, sustainable scopes:</strong> ship iteratively with clear constraints and measurable outcomes.</li>
+    <li><strong>Autonomy by design:</strong> lightweight stacks (Eleventy, Netlify, vanilla JS), no lock‑in, own your content.</li>
+    <li><strong>Accessibility and integrity:</strong> a11y as a baseline, privacy‑respecting analytics, honest metrics.</li>
+    <li><strong>Editorial craft:</strong> content systems, voice and tone, and documentation that outlives the project.</li>
+    <li><strong>Community:</strong> research‑informed engagement, inclusive facilitation, and clear stewardship plans.</li>
   </ul>
 
-  <h2>What I do</h2>
-  <p>Web development (Eleventy/JAMstack), content strategy, copywriting, technical writing, and community‑centered education.</p>
+  <h2>What we offer</h2>
+  <p>Web development (Eleventy/JAMstack), content strategy and technical writing, audits and accessibility improvements, community engagement design, and small‑scope product/website launches.</p>
 
-  {% from "partials/testimonials.njk" import stars %}
   {% include "partials/testimonials.njk" %}
 
   <div class="not-prose mt-10">
@@ -64,7 +61,7 @@ title: About
         </div>
         <div class="flex gap-3">
           <a href="/services/" class="bg-red-600 hover:bg-red-700 text-white px-5 py-2 rounded-lg transition-colors">View services</a>
-          <a href="/about/" class="border border-red-600 text-red-600 hover:bg-red-50 dark:hover:bg-red-900/20 px-5 py-2 rounded-lg transition-colors">Contact</a>
+          <a href="mailto:{{ site.email }}" class="border border-red-600 text-red-600 hover:bg-red-50 dark:hover:bg-red-900/20 px-5 py-2 rounded-lg transition-colors">Contact</a>
         </div>
       </div>
     </div>

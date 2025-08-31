@@ -151,12 +151,13 @@
 }
 
 .dark {
-  --bg: #0f0a1a;
-  --text: #f1e8ff;
-  --surface: #1a0f2e;
-  --accent: #f87171; /* red-400 */
-  --accent-light: #fca5a5; /* red-300 */
-  --border: #7f1d1d; /* red-900 */
+  /* Deep red theme for dark mode (remove purple cast) */
+  --bg: #120708;        /* near-black with subtle red */
+  --text: #ffe4e6;      /* rose-100 */
+  --surface: #1b0a0b;   /* very dark maroon */
+  --accent: #ef4444;    /* red-500 */
+  --accent-light: #f87171; /* red-400 */
+  --border: #7f1d1d;    /* red-900 */
 }
 
 #progress-bar {
