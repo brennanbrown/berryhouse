@@ -1,0 +1,20 @@
+---
+layout: layouts/base.njk
+---
+{% set slug = (page.url or '') | replace('/portfolio/', '') | replace('/', '') %}
+<section class="prose dark:prose-invert">
+  {% if title %}
+    <h1>{{ title }}</h1>
+  {% endif %}
+
+  {% if slug %}
+    <figure class="my-4">
+      <img src="/assets/screenshots/{{ slug }}-live.png" alt="{{ title }} live screenshot" class="w-full max-w-3xl rounded border" loading="lazy" />
+      {% if description %}
+        <figcaption class="text-sm text-gray-600 dark:text-gray-400 mt-2">{{ description }}</figcaption>
+      {% endif %}
+    </figure>
+  {% endif %}
+
+  {{ content | safe }}
+</section>

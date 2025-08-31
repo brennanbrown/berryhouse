@@ -12,6 +12,12 @@ permalink: /portfolio/
     <ul class="grid gap-6 md:grid-cols-2">
       {% for item in collections.portfolio | reverse %}
         <li class="border rounded p-4 bg-[var(--surface)]">
+          {% set slug = (item.url or '') | replace('/portfolio/', '') | replace('/', '') %}
+          {% if slug %}
+          <a href="{{ item.url }}" class="block mb-3">
+            <img src="/assets/screenshots/{{ slug }}-live.png" alt="{{ item.data.title }} screenshot" class="w-full aspect-square object-cover rounded border" loading="lazy" />
+          </a>
+          {% endif %}
           <h2 class="text-xl font-semibold"><a href="{{ item.url }}">{{ item.data.title }}</a></h2>
           {% if item.data.description %}
           <p class="text-gray-700 dark:text-gray-300">{{ item.data.description }}</p>
