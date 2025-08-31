@@ -15,7 +15,8 @@
     "test": "npm run test:build && npm run test:e2e",
     "test:build": "node tests/build-test.js",
     "test:e2e": "playwright test",
-    "test:install": "npx playwright install"
+    "test:install": "npx playwright install",
+    "shots:portfolio": "BASE_URL=http://localhost:8080 node scripts/screenshot-portfolio.js"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0",
