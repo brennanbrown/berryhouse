@@ -7,7 +7,7 @@ permalink: /education/
 
 <section class="prose dark:prose-invert">
   <h1>Education</h1>
-  <p>Learn the fundamentals of JAMstack, IndieWeb, and Digital Gardens—concepts that power a faster, safer, and more human web. Start small, build skills, and publish with confidence.</p>
+  <p>Learn the fundamentals of JAMstack, IndieWeb, and Digital Gardens—concepts that power a faster, safer, and more human web. These primers include practical steps, recommended tools, and accessible references to help you ship confidently.</p>
 
   <h2>Primers</h2>
   <ul>
@@ -19,11 +19,18 @@ permalink: /education/
   <h2>Get involved</h2>
   <p>Have questions or want to suggest a topic?</p>
   <div class="not-prose my-6 flex flex-wrap gap-3">
-    <a href="{{ site.community.discord or 'https://discord.com/PLACEHOLDER' }}" class="px-4 py-2 rounded border border-red-600 text-red-600 hover:bg-red-50 dark:hover:bg-red-900/20 transition-colors">Join the Discord</a>
+    <a href="{{ site.community.discord or 'https://discord.com/PLACEHOLDER' }}" class="px-4 py-2 rounded border border-red-600 text-red-600 hover:bg-red-50 dark:hover:bg-red-900/20 transition-colors no-underline decoration-transparent">Join the Discord</a>
     {% if site.newsletter and site.newsletter.enabled and site.newsletter.action %}
-      <a href="{{ site.newsletter.action }}" class="px-4 py-2 rounded border border-red-600 text-red-600 hover:bg-red-50 dark:hover:bg-red-900/20 transition-colors">Subscribe to the newsletter</a>
+      <a href="{{ site.newsletter.action }}" class="px-4 py-2 rounded border border-red-600 text-red-600 hover:bg-red-50 dark:hover:bg-red-900/20 transition-colors no-underline decoration-transparent">Subscribe to the newsletter</a>
     {% else %}
-      <a href="#newsletter" class="px-4 py-2 rounded border border-red-600 text-red-600 hover:bg-red-50 dark:hover:bg-red-900/20 transition-colors">Subscribe to the newsletter</a>
+      <a href="#newsletter" class="px-4 py-2 rounded border border-red-600 text-red-600 hover:bg-red-50 dark:hover:bg-red-900/20 transition-colors no-underline decoration-transparent">Subscribe to the newsletter</a>
     {% endif %}
   </div>
+
+  <h2>Recommended resources</h2>
+  <ul>
+    <li><a href="https://www.11ty.dev/">Eleventy</a> • <a href="https://gohugo.io/">Hugo</a> • <a href="https://tailwindcss.com/">Tailwind CSS</a></li>
+    <li><a href="https://www.netlify.com/">Netlify</a> • <a href="https://vercel.com/">Vercel</a> • <a href="https://github.com/">GitHub</a></li>
+    <li><a href="https://indieweb.org/">IndieWeb Wiki</a> • <a href="https://microformats.org/">Microformats</a> • <a href="https://webmention.net/">Webmention</a></li>
+  </ul>
 </section>
