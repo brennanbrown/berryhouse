@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 ## [Unreleased]
 - Project scaffolding and alignment work in progress per `_IMPORTANT/spec_sheet.md`.
 
+## 2025-09-01
+- Education section enriched:
+  - Hub overview refined and CTAs adjusted to match global link styling (`src/education.njk`).
+  - JAMstack primer expanded with architecture, when-to-use, tooling, deploy steps, and links (`src/education/what-is-jamstack.md`).
+  - IndieWeb primer expanded with building blocks (microformats2, Webmention, IndieAuth), Eleventy setup, POSSE tips, and resources (`src/education/understanding-indieweb.md`).
+  - Digital Gardens primer expanded with principles, note types, workflow, tooling, and resources (`src/education/exploring-digital-gardens.md`).
+- Now page deepened with linked tools, hardware, community, and optional goals/reading sections (`src/now.njk`).
+
 ## 2025-08-28
 - Homepage expansion (`src/index.njk`):
   - Added sections: What we do, Why Strawberry Collective, Our process, CTA band.
