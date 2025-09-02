@@ -47,8 +47,8 @@
   @apply mb-6 leading-relaxed;
 }
 
-/* Branded link styles inside rich text */
-.prose a {
+/* Branded link styles inside rich text (exclude .not-prose) */
+.prose :where(a, a:visited):not(:where(.not-prose *)) {
   @apply text-red-700 dark:text-red-300 underline underline-offset-2 decoration-red-300 hover:text-red-800 dark:hover:text-red-200 hover:decoration-red-400;
 }
 
@@ -249,7 +249,14 @@ body {
 @layer base {
   a {
     cursor: pointer;
-    text-decoration: none;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    color: inherit; /* avoid default blue; utilities (e.g., text-white) should override */
+  }
+  a:link, a:visited {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    /* Do NOT set color here to avoid overriding utility classes like text-white */
   }
   a:focus-visible {
     outline: 2px solid #ef4444; /* red accent focus ring */
@@ -273,7 +280,7 @@ body {
   }
 }
 
-/* Prose improvements */
+/* Prose improvements (branded red links) */
 @layer components {
   .prose {
     color: var(--text);
@@ -281,31 +288,19 @@ body {
   .prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 {
     color: var(--text);
   }
-  .prose a {
-    color: #2563eb; /* readable blue on light */
-    text-decoration: underline;
-    text-underline-offset: 2px;
-    text-decoration-thickness: 1.5px;
-    transition: color 150ms ease-in-out; /* color-only to avoid layout shift */
+  .prose :where(a, a:visited):not(:where(.not-prose *)) {
+    @apply text-red-700 dark:text-red-300 underline underline-offset-2 decoration-red-300 hover:text-red-800 dark:hover:text-red-200 hover:decoration-red-400;
   }
-  .prose a:hover {
-    color: #1d4ed8;
-  }
-  .prose a:active {
-    text-decoration-thickness: 2px;
-  }
-  .prose a:focus-visible {
+  .prose :where(a, a:visited):not(:where(.not-prose *)):focus-visible {
     outline: 2px solid #ef4444;
     outline-offset: 2px;
     border-radius: 2px;
   }
-  .dark .prose a {
-    color: #60a5fa;
-  }
-  .dark .prose a:hover {
-    color: #93c5fd;
-  }
-  .dark .prose a:focus-visible {
-    outline-color: #f87171;
+}
+
+/* Final-override utilities to beat plugin order if needed */
+@layer utilities {
+  .prose :where(a, a:visited):not(:where(.not-prose *)) {
+    @apply text-red-700 dark:text-red-300 underline underline-offset-2 decoration-red-300 hover:text-red-800 dark:hover:text-red-200 hover:decoration-red-400;
   }
 }

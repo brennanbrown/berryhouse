@@ -19,7 +19,7 @@ title: Blog
         <div class="p-summary mt-2 text-gray-700 dark:text-gray-300">{{ post.data.description or (post.templateContent | striptags | truncate(160)) }}</div>
         <div class="mt-2 text-sm space-x-2">
           {% for tag in post.data.tags %}
-            <a class="p-category px-2 py-0.5 rounded bg-gray-100 dark:bg-gray-800" href="/tags/{{ tag | slug }}/">#{{ tag }}</a>
+            <a class="p-category px-2 py-0.5 rounded bg-gray-100 dark:bg-gray-800 no-underline decoration-transparent hover:decoration-transparent" href="/tags/{{ tag | slug }}/">#{{ tag }}</a>
           {% endfor %}
         </div>
       </article>

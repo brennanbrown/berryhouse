@@ -66,7 +66,7 @@ title: "Strawberry Collective — Web & Writing"
       </div>
     </div>
     <div class="mt-6">
-      <a href="/services/" class="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white px-5 py-2 rounded-lg transition-colors">Explore services →</a>
+      <a href="/services/" class="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white px-5 py-2 rounded-lg transition-colors no-underline decoration-transparent hover:decoration-transparent">Explore services →</a>
     </div>
   </section>
 
@@ -129,8 +129,8 @@ title: "Strawberry Collective — Web & Writing"
           <p class="text-gray-700 dark:text-gray-300">Start with a short call to see if we’re a fit. No pressure, no jargon.</p>
         </div>
         <div class="flex gap-3">
-          <a href="/services/" class="bg-red-600 hover:bg-red-700 text-white px-5 py-2 rounded-lg transition-colors">View services</a>
-          <a href="/about/" class="border border-red-600 text-red-600 hover:bg-red-50 dark:hover:bg-red-900/20 px-5 py-2 rounded-lg transition-colors">About us</a>
+          <a href="/services/" class="bg-red-600 hover:bg-red-700 text-white px-5 py-2 rounded-lg transition-colors no-underline decoration-transparent hover:decoration-transparent">View services</a>
+          <a href="/about/" class="border border-red-600 text-red-600 hover:bg-red-50 dark:hover:bg-red-900/20 px-5 py-2 rounded-lg transition-colors no-underline decoration-transparent hover:decoration-transparent">About us</a>
         </div>
       </div>
     </div>
@@ -138,13 +138,13 @@ title: "Strawberry Collective — Web & Writing"
     </div>
 
     <div class="flex flex-wrap justify-center gap-4">
-      <a href="/services/" class="bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-lg transition-colors">
+      <a href="/services/" class="bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-lg transition-colors no-underline decoration-transparent hover:decoration-transparent">
         🧰 See our services
       </a>
-      <a href="/about/" class="border border-red-600 text-red-600 hover:bg-red-50 dark:hover:bg-red-900/20 px-6 py-2 rounded-lg transition-colors">
+      <a href="/about/" class="border border-red-600 text-red-600 hover:bg-red-50 dark:hover:bg-red-900/20 px-6 py-2 rounded-lg transition-colors no-underline decoration-transparent hover:decoration-transparent">
         👋 About Strawberry Collective
       </a>
-      <a href="/feed.xml" class="border border-red-600 text-red-600 hover:bg-red-50 dark:hover:bg-red-900/20 px-6 py-2 rounded-lg transition-colors">
+      <a href="/feed.xml" class="border border-red-600 text-red-600 hover:bg-red-50 dark:hover:bg-red-900/20 px-6 py-2 rounded-lg transition-colors no-underline decoration-transparent hover:decoration-transparent">
         📡 Subscribe via RSS
       </a>
     </div>
@@ -188,7 +188,7 @@ title: "Strawberry Collective — Web & Writing"
           {% if tags %}
           <div class="flex flex-wrap gap-2">
             {% for tag in tags %}
-              <a class="p-category px-2 py-1 rounded text-white text-xs hover:opacity-80 transition-opacity" 
+              <a class="p-category px-2 py-1 rounded text-white text-xs hover:opacity-80 transition-opacity no-underline decoration-transparent hover:decoration-transparent" 
                  style="background-color: {{ tag | tagColor }}" 
                  href="/tags/{{ tag | slug }}/">#{{ tag }}</a>
             {% endfor %}
@@ -213,19 +213,19 @@ title: "Strawberry Collective — Web & Writing"
 
   <!-- Quick Links -->
   <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-12">
-    <a href="/now/" class="block p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg hover:bg-blue-100 dark:hover:bg-blue-900/30 transition-colors">
+    <a href="/now/" class="block p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg hover:bg-blue-100 dark:hover:bg-blue-900/30 transition-colors no-underline decoration-transparent hover:decoration-transparent">
       <div class="text-2xl mb-2">📍</div>
       <h3 class="font-semibold text-blue-800 dark:text-blue-200">What I'm up to now</h3>
       <p class="text-sm text-blue-600 dark:text-blue-300">Current projects and focus</p>
     </a>
     
-    <a href="/uses/" class="block p-4 bg-green-50 dark:bg-green-900/20 rounded-lg hover:bg-green-100 dark:hover:bg-green-900/30 transition-colors">
+    <a href="/uses/" class="block p-4 bg-green-50 dark:bg-green-900/20 rounded-lg hover:bg-green-100 dark:hover:bg-green-900/30 transition-colors no-underline decoration-transparent hover:decoration-transparent">
       <div class="text-2xl mb-2">🛠️</div>
       <h3 class="font-semibold text-green-800 dark:text-green-200">Tools I use</h3>
       <p class="text-sm text-green-600 dark:text-green-300">Hardware, software, and setup</p>
     </a>
     
-    <a href="/sitemap/" class="block p-4 bg-red-50 dark:bg-red-900/20 rounded-lg hover:bg-red-100 dark:hover:bg-red-900/30 transition-colors">
+    <a href="/sitemap/" class="block p-4 bg-red-50 dark:bg-red-900/20 rounded-lg hover:bg-red-100 dark:hover:bg-red-900/30 transition-colors no-underline decoration-transparent hover:decoration-transparent">
       <div class="text-2xl mb-2">🗺️</div>
       <h3 class="font-semibold text-red-800 dark:text-red-200">Explore this site</h3>
       <p class="text-sm text-red-600 dark:text-red-300">Complete directory of pages</p>
