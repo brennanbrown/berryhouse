@@ -53,7 +53,7 @@ async function loadPortfolioDemos() {
   }
 
   const browser = await chromium.launch();
-  const context = await browser.newContext({ viewport: { width: 1366, height: 768 } });
+  const context = await browser.newContext({ viewport: { width: 1000, height: 1000 } });
   const page = await context.newPage();
 
   const results = [];
@@ -63,7 +63,7 @@ async function loadPortfolioDemos() {
       await page.goto(demo, { waitUntil: 'domcontentloaded', timeout: 45000 });
       // Try to settle the page a bit
       await page.waitForLoadState('networkidle', { timeout: 20000 }).catch(() => {});
-      await page.screenshot({ path: outPath, fullPage: true });
+      await page.screenshot({ path: outPath, fullPage: false });
       console.log(`✔ Saved ${outPath}`);
       results.push({ slug, ok: true });
     } catch (err) {
