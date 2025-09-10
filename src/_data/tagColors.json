@@ -18,5 +18,19 @@
   "accessibility": "#10b981",
   "performance": "#f59e0b",
   "seo": "#ef4444",
-  "indieweb": "#06b6d4"
+  "indieweb": "#06b6d4",
+  "projects": "#0ea5e9",
+  "productivity": "#22c55e",
+  "weekend": "#f43f5e",
+  "markdown": "#64748b",
+  "reference": "#0891b2",
+  "collaboration": "#a855f7",
+  "branding": "#f59e0b",
+  "announcement": "#dc2626",
+  "testing": "#16a34a",
+  "jamstack": "#fb923c",
+  "retro": "#f472b6",
+  "privacy": "#475569",
+  "blogging": "#2563eb",
+  "thoughts": "#94a3b8"
 }
