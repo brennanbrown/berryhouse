@@ -1,4 +1,4 @@
-# Strawberry Collective — Project TODO
+# Berry House — Project TODO
 
 This is a living task list to implement the spec in `_IMPORTANT/spec_sheet.md` across the 11ty codebase.
 

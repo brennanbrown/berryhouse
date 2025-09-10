@@ -1,7 +1,7 @@
 {
-  "name": "🍓 Strawberry Collective",
+  "name": "🍓 Berry House",
   "description": "Hi. We're here to help you create and share meaningful work and art with the world. Whether you're looking to amplify your writing or build an independent website, we're here to help.",
-  "url": "https://strawberrycollective.netlify.app",
+  "url": "https://berryhouse.ca/",
   "author": "Brennan Kenneth Brown",
   "email": "mail@brennanbrown.ca",
   "social": {
@@ -10,7 +10,7 @@
     "twitter": ""
   },
   "repo": {
-    "url": "https://github.com/brennanbrown/strawberry-collective",
+    "url": "https://github.com/brennanbrown/berryhouse",
     "branch": "main"
   },
   "bio": {
@@ -23,7 +23,7 @@
     "enabled": true,
     "provider": "substack",
     "action": "https://brennanbrown.substack.com/embed",
-    "title": "Join the IndieGarden Newsletter",
+    "title": "Join the Berry House Newsletter",
     "description": "Get thoughtful essays and updates on digital writing, JAMstack, and the IndieWeb delivered to your inbox. No spam ever."
   },
   "donate": {
@@ -31,17 +31,17 @@
     "kofi": "",
     "buymeacoffee": "",
     "github": "brennanbrown",
-    "message": "If you find value in my work and the mission of IndieGarden, consider supporting my efforts. Every contribution helps me continue creating thoughtful work and providing accessible services."
+    "message": "If you find value in my work and the mission of Berry House, consider supporting my efforts. Every contribution helps me continue creating thoughtful work and providing accessible services."
   },
   "analytics": {
     "enabled": true,
     "provider": "plausible",
-    "domain": "strawberrycollective.netlify.app",
+    "domain": "berryhouse.ca",
     "siteId": ""
   },
   "webmentions": {
     "enabled": true,
-    "domain": "indiegarden.netlify.app"
+    "domain": "berryhouse.ca"
   },
   "webring": {
     "enabled": false,

@@ -1,4 +1,4 @@
-# Changelog — Strawberry Collective
+# Changelog — Berry House
 
 All notable changes to this project will be documented in this file.
 
@@ -15,7 +15,7 @@ All notable changes to this project will be documented in this file.
 
 ## 2025-08-28
 - Homepage expansion (`src/index.njk`):
-  - Added sections: What we do, Why Strawberry Collective, Our process, CTA band.
+  - Added sections: What we do, Why Berry House, Our process, CTA band.
   - Widened hero text area; improved CTAs and quick links.
 - Layout width improvements (`src/_includes/layouts/base.njk`):
   - Increased desktop max-widths for header, nav, main, and footer; removed `container` caps.

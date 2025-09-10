@@ -1,12 +1,27 @@
-![IndieWeb Blog Starter preview](./screenshot.png)
+![Berry House preview](./screenshot.png)
 
-# IndieWeb Blog Starter
+# Berry House
 
-A modern, feature-complete blog template built with Eleventy and Tailwind CSS. Designed for writers who want to own their content and participate in the IndieWeb.
+Berry House is a small, values‑driven studio site and writing hub built with Eleventy and Tailwind CSS. It emphasizes accessibility, performance, and IndieWeb principles—owning your platform and content.
+
+This repository contains the production code for the Berry House agency website. It is not a generic theme or starter. If you’re looking for a reusable blog starter, please see the template this site is based on (created by the same author):
+
+- 11ty Indie Web Blog Starter: https://github.com/brennanbrown/11ty-Indie-Web-Blog-Starter
+- Live demo of the starter: https://indieweb-blog-starter.netlify.app/
+
+- Live site: https://berryhouse.ca/
+- Repository: https://github.com/brennanbrown/berryhouse
+
+## Tech Stack
+- Eleventy (11ty) for site generation
+- Nunjucks templating
+- Tailwind CSS for styling
+- Client‑side search with FlexSearch
+- Optional analytics (Plausible)
 
 > New to this? Read the non-technical guide: [GUIDE.md](./GUIDE.md)
 
-## Features
+## Site Features
 
 - **Simple setup** - Edit one config file and you're ready to publish
 - **IndieWeb ready** - Microformats, webmentions, and RSS built-in
@@ -18,12 +33,12 @@ A modern, feature-complete blog template built with Eleventy and Tailwind CSS. D
 
 1. **Clone and install**:
    ```bash
-   git clone https://github.com/yourusername/indieweb-blog-starter.git
-   cd indieweb-blog-starter
+   git clone https://github.com/brennanbrown/berryhouse.git
+   cd berryhouse
    npm install
    ```
 
-2. **Configure your site** (most important step!):
+2. **Configure the site** (most important step!):
    Edit `src/_data/site.json` with your information:
    ```json
    {
@@ -42,39 +57,38 @@ A modern, feature-complete blog template built with Eleventy and Tailwind CSS. D
    }
    ```
 
-3. **Start writing**:
-   ```bash
-   npm run dev
-   ```
-   Visit `http://localhost:8080` and start creating!
+3. **Start the dev server**:
+  ```bash
+  npm run dev
+  ```
+  Visit `http://localhost:8080` and start creating!
 
-4. **Deploy**:
-   ```bash
-   npm run build
-   ```
+4. **Build for production**:
+  ```bash
+  npm run build
+  ```
 
-## 🎯 Features
+## 🧑‍💻 Development
 
-- 🚀 **Zero Config**: Just edit one file and you're ready
-- 🌙 **Dark Mode**: Automatic system detection + manual toggle
-- ♿ **Accessible**: WCAG 2.1 AA compliant with accessibility controls
-- 🔍 **Smart Search**: Client-side FlexSearch with live results
-- 🕸️ **IndieWeb Ready**: Microformats2, Webmentions, h-card
-- 📡 **RSS Feed**: Automatic feed generation
-- 🎨 **Tag Colors**: Automatic color mapping for tags
-- 📱 **Mobile First**: Responsive design that works everywhere
-- 🔒 **Privacy Focused**: Optional analytics (Plausible/Fathom)
-- 🎪 **Easter Eggs**: Hidden interactions for fun
+- Run dev server (with Tailwind watcher): `npm run dev`
+- Build the site: `npm run build`
+- Take portfolio screenshots (local): `npm run shots:portfolio`
+- Take portfolio screenshots (live links): `npm run shots:portfolio:live`
 
-## 🛠️ Easy Configuration
+## ✅ Testing
 
-Unlike other templates that require editing dozens of files, this template uses a single configuration file (`src/_data/site.json`) for most customization:
+This project includes a simple build validation:
 
-### Indie Creator Guide
+- Run tests: `npm test` or `npm run test:build`
+- End-to-end accessibility checks: `npm run test:e2e`
 
-See the in-depth post: [Guide to Making It as an Indie Creator](https://indieweb-blog-starter.windsurf.build/blog/guide-to-making-it-as-an-indie-creator/) for practical steps to grow an audience, accept support, and keep a simple workflow using this template.
+Search index is generated at build time (`/search.json`) via a custom Eleventy collection.
 
-Quick reference (matches the code in `src/_includes/layouts/post.njk`, `src/contact.njk`, and `src/donate.njk`):
+## 🛠️ Configuration
+
+This project uses a single configuration file, `src/_data/site.json`, for most customization:
+
+Quick reference (matches usage in `src/_includes/layouts/post.njk`, `src/contact.njk`, and `src/donate.njk`):
 
 - **Newsletter** (renders on posts when enabled):
   ```json
@@ -163,7 +177,7 @@ Quick reference (matches the code in `src/_includes/layouts/post.njk`, `src/cont
 }
 ```
 
-## 📁 Template Structure
+## 📁 Project Structure
 
 ```
 src/
@@ -188,7 +202,7 @@ src/
 
 ## 🖼️ Configurable Placeholder Assets
 
-This template includes a tiny build helper that fetches placeholder images so your site looks complete out‑of‑the‑box without committing binaries. Files are saved to `src/assets/` and passed through to `/assets/` at build time.
+This project includes a tiny build helper that fetches placeholder images so your site looks complete out‑of‑the‑box without committing binaries. Files are saved to `src/assets/` and passed through to `/assets/` at build time.
 
 What gets fetched by default:
 
@@ -220,28 +234,19 @@ The fetcher runs as part of the build (`npm run build`), before CSS and Eleventy
 
 ## 🚀 Deployment
 
-### Netlify (One-Click Deploy)
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/yourusername/indieweb-blog-starter)
-
-### GitHub Pages
-1. Push to GitHub
-2. Enable GitHub Pages in repository settings
-3. The included workflow will build and deploy automatically
-
-### Manual Netlify
-1. Connect your GitHub repository
+### Netlify (recommended)
+1. Connect the repository `brennanbrown/berryhouse` in Netlify
 2. Build command: `npm run build`
 3. Publish directory: `_site`
+4. Set the primary domain to `berryhouse.ca`
 
-### Manual Deployment
-```bash
-npm run build
-# Upload _site/ folder to your web server
-```
+### Other static hosts
+1. Run `npm run build`
+2. Upload the contents of the `_site/` directory to your host (e.g., Cloudflare Pages, GitHub Pages with a workflow, Vercel static)
 
 ## 🌐 IndieWeb Setup
 
-This template includes IndieWeb features out of the box:
+This project includes IndieWeb features out of the box:
 
 ### Webmentions
 1. Sign up at [webmention.io](https://webmention.io)
@@ -279,31 +284,26 @@ Supports multiple providers:
 
 ## 🗺️ Roadmap
 
-The following improvements are planned to keep this template modern, accessible, and fun to use:
-
-- [ ] __Themes__: additional vibrant code themes and optional color presets
-- [ ] __PWA/Offline__: add service worker for basic offline reading
-- [ ] __i18n__: language switcher and localized date formatting
-- [ ] __Webmentions UI__: simple moderation/preview UI and richer templates
-- [ ] __SEO__: JSON-LD schema and improved link previews
-- [ ] __Accessibility__: periodic audits and keyboard interaction tests
-- [ ] __Testing__: expand Playwright e2e coverage (mobile and dark mode)
-- [ ] __Content Starter__: more sample posts and page templates
-
-Have suggestions? Open an issue or PR.
+We track work for this agency site in issues/PRs. Larger feature requests and reusable improvements should be proposed in the underlying starter project when appropriate.
 
 ## 🤝 Contributing
 
-Found a bug or want to improve something? Contributions welcome!
+Contributions are welcome. Please note this is the Berry House agency website—not a generic template. Use this repo for fixes to copy, accessibility, performance, or build issues specific to berryhouse.ca.
 
+- For site issues (typos, broken links, accessibility, performance): open an issue here.
+- For reusable features or starter-specific improvements: contribute to the 11ty Indie Web Blog Starter instead: https://github.com/brennanbrown/11ty-Indie-Web-Blog-Starter
+
+Workflow:
 1. Fork the repository
 2. Create a feature branch
-3. Make your changes
-4. Submit a pull request
+3. Make your changes (include clear commit messages)
+4. Open a PR with a concise description, screenshots if applicable, and notes on testing
 
 ## 📄 License
 
-MIT License - feel free to use this template for any project!
+MIT License — see `LICENSE`.
+
+Note: this repository is the Berry House agency website (production code). If you need a reusable starter, use the 11ty Indie Web Blog Starter linked above.
 
 ## 🙏 Acknowledgments
 
