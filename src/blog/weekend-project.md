@@ -2,7 +2,7 @@
 layout: layouts/post.njk
 title: Weekend Project - Building a Reading List App
 subtitle: Sometimes the best solutions are the simple ones
-author: Blog Author
+author: Brennan Kenneth Brown
 date: 2025-08-05
 description: How I built a minimal reading list tracker in a weekend using vanilla JavaScript and local storage.
 tags: [projects, javascript, productivity, weekend]

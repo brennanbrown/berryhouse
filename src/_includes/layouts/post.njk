@@ -17,13 +17,22 @@ layout: layouts/base.njk
 
 <article class="h-entry">
   {% if featuredImage %}
-    <img class="u-photo w-full rounded-lg mb-6" src="{{ featuredImage }}" alt="Featured image for {{ title }}" />
+    <img class="u-photo block w-full h-auto max-w-3xl mx-auto rounded-lg mb-6" src="{{ featuredImage }}" alt="Featured image for {{ title }}" />
   {% endif %}
   
   <header class="mb-6">
     <h1 class="p-name text-3xl font-bold mb-2">{{ title }}</h1>
     {% if subtitle %}
       <p class="text-xl text-gray-600 dark:text-gray-400 mb-4">{{ subtitle }}</p>
+    {% endif %}
+    {% if tags and tags.length %}
+    <div class="flex flex-wrap gap-2 mb-3">
+      {% for tag in tags %}
+        <a class="p-category px-3 py-1 text-xs rounded-full text-white hover:opacity-80 no-underline decoration-transparent hover:decoration-transparent" 
+           style="background-color: {{ tag | tagColor }}"
+           href="/tags/{{ tag | slug }}/">#{{ tag }}</a>
+      {% endfor %}
+    </div>
     {% endif %}
     <div class="text-sm text-gray-600 dark:text-gray-400">
       Published on <time class="dt-published" datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
@@ -37,18 +46,7 @@ layout: layouts/base.njk
     {{ content | safe }}
   </div>
   
-  {% if tags %}
-  <div class="post-tags mt-8 pt-6 border-t border-gray-200 dark:border-gray-700">
-    <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-2">Tags</h3>
-    <div class="flex flex-wrap gap-2">
-      {% for tag in tags %}
-        <a class="p-category px-3 py-1 text-sm rounded-full text-white hover:opacity-80 no-underline decoration-transparent hover:decoration-transparent" 
-           style="background-color: {{ tag | tagColor }}" 
-           href="/tags/{{ tag | slug }}/">#{{ tag }}</a>
-      {% endfor %}
-    </div>
-  </div>
-  {% endif %}
+  {# Tags moved above under the header #}
 
   <section class="mt-8 pt-6 border-t border-gray-200 dark:border-gray-700">
     {% include "partials/share-links.njk" %}

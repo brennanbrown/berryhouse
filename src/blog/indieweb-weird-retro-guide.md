@@ -2,8 +2,8 @@
 layout: layouts/post.njk
 title: IndieWeb 101 and Making Your Site Delightfully Weird
 subtitle: A friendly guide for non‑technical folks
-author: Blog Author
-date: 2025-08-19
+author: Brennan Kenneth Brown
+date: 2025-08-22
 description: Learn the basics of the IndieWeb and easy ways to give your site a fun retro personality—no coding required.
 tags: [indieweb, guide, retro]
 category: reference

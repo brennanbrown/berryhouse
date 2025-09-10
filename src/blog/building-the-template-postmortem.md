@@ -2,8 +2,8 @@
 layout: layouts/post.njk
 title: Building the IndieWeb Blog Template — A Technical Postmortem
 subtitle: What broke, how we fixed it, and advice for Eleventy devs
-author: Your Name
-date: 2025-08-19
+author: Brennan Kenneth Brown
+date: 2025-08-18
 description: A deep-dive into making a production-ready Eleventy blog template with robust E2E tests, accessibility, and clean UI patterns.
 tags: [eleventy, testing, accessibility, indieweb, jamstack]
 category: engineering

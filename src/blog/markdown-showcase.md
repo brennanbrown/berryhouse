@@ -2,8 +2,8 @@
 layout: layouts/post.njk
 title: Markdown Syntax Showcase
 subtitle: A comprehensive guide to all markdown features
-author: Blog Author
-date: 2025-08-15
+author: Brennan Kenneth Brown
+date: 2025-08-14
 description: Complete demonstration of markdown syntax including headers, lists, code blocks, tables, and more.
 tags: [markdown, guide, reference]
 featuredImage: https://picsum.photos/800/400?random=1

@@ -2,7 +2,7 @@
 layout: layouts/post.njk
 title: Building for the Independent Web
 subtitle: Why I chose to create my own space online
-author: Blog Author
+author: Brennan Kenneth Brown
 date: 2025-08-10
 description: Thoughts on digital ownership, privacy, and creating meaningful connections in the age of social media algorithms.
 tags: [indieweb, privacy, blogging, thoughts]

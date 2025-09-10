@@ -2,7 +2,7 @@
 layout: layouts/post.njk
 title: Hello, World
 subtitle: Welcome to your new blog
-author: Your Name
+author: Brennan Kenneth Brown
 date: 2025-08-01
 description: First post introducing the new JAMstack blog template.
 tags: [intro, meta]
