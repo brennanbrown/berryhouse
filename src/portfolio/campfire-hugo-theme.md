@@ -1,21 +1,21 @@
----
-layout: layouts/base.njk
-title: Campfire (Hugo Theme)
-description: A story-focused Hugo theme with readable typography and dark/light themes.
-permalink: /portfolio/campfire-hugo-theme/
-tags: [portfolio]
-technologies: [Hugo, HTML, CSS]
+----
+layout: layouts/portfolio.njk
+title: Campfire — Story‑Focused Hugo Theme
+description: A warm, writing‑first Hugo theme for blogs and journals with readable typography, dark/light themes, and a pragmatic sidebar.
 links:
   repo: https://github.com/brennanbrown/Campfire-Hugo-Theme
   demo: https://campfire-hugo.netlify.app
+tech:
+  - Hugo
+  - HTML
+  - CSS
 ---
 
-<section class="prose dark:prose-invert">
-  <h1>{{ title }}</h1>
-  <p>{{ description }}</p>
-  <p><strong>Tech:</strong> {{ technologies | join(', ') }}</p>
-  <p>
-    <a href="{{ links.demo }}" target="_blank" rel="noopener">Live demo</a> ·
-    <a href="{{ links.repo }}" target="_blank" rel="noopener">Source</a>
-  </p>
-</section>
+Campfire is designed for reading comfort and simple publishing. It uses a wider content column, a helpful sidebar, and persistent theme toggles to make long‑form writing inviting on any device.
+
+Highlights:
+
+- Readable typography and balanced line‑length
+- Light/dark themes with preference persistence
+- Mobile‑friendly header and navigation
+- Straightforward partials and layouts for customization

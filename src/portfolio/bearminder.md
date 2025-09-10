@@ -12,6 +12,8 @@ tech:
   - Bear App API
   - Keychain
   - XcodeGen
+docsDescription: "A macOS menubar application that tracks daily word counts from the Bear app and posts them to Beeminder goals. It aims to replace the functionality of the now-defunct Draft.com for writers who use Bear for their daily writing and Beeminder for goal tracking. It runs on-demand or hourly, securely stores tokens in Keychain, and focuses on privacy."
+docsTechnologies: "Swift, macOS AppKit, Beeminder API, Bear App API, Keychain, XcodeGen"
 ---
 
 Private, local-first macOS utility for writers who track goals in Beeminder and draft in Bear.

@@ -13,6 +13,8 @@ tech:
   - Nunjucks
   - Vitest
   - Service Workers
+docsDescription: "A privacy-first, offline-capable personal finance Progressive Web App (PWA). It supports transactions with accounts and transfers, monthly budgeting, and robust offline caching via a service worker. Data is stored locally in IndexedDB, ensuring privacy with no external APIs."
+docsTechnologies: "Eleventy (11ty), Tailwind CSS, IndexedDB, JavaScript, Nunjucks, Vitest, Service Workers"
 ---
 
 Local‑first money management that works offline and keeps your data on your device.

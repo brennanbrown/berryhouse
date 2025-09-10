@@ -11,6 +11,8 @@ tech:
   - CSS
   - Ruby
   - Shell
+docsDescription: "The professional website of Marcus Madelo, a Filipino-Canadian spoken-word poet and artist based in Calgary, Alberta. The site showcases his work, including a collection of his poems."
+docsTechnologies: "Jekyll, HTML, CSS, Shell, Ruby"
 ---
 
 Showcase of performance poetry and published work.

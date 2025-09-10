@@ -14,7 +14,8 @@ tech:
   - Obsidian
   - Ruby
   - Simply Jekyll Search
----
+docsDescription: "An extensive Jekyll theme designed to have similar functionality to Roam Research. It's an academic/research-focused theme that provides extensive features for note-taking and personal growth, based on the Digital Garden philosophy. It aims to integrate with Obsidian for turning notes into an online blog."
+docsTechnologies: "Jekyll, HTML, CSS (Bootstrap 4, SCSS), Obsidian, Ruby, Simply Jekyll Search"
 
 enjoyment‑work is a Digital Garden theme inspired by tools‑for‑thought like Roam Research. It’s designed for researchers and writers who want networked notes, backlinks, and fast publishing without sacrificing control. It integrates smoothly with Obsidian so you can write locally and publish cleanly.
 

@@ -15,6 +15,8 @@ tech:
   - Pa11y
   - Linkinator
   - html-validator
+docsDescription: "An npm package and CLI tool designed to audit Jekyll sites for performance, accessibility, SEO, broken links, and HTML validation. It builds and serves the Jekyll site locally, then runs various audits using tools like Lighthouse, Pa11y, Linkinator, and html-validator, providing consolidated reports."
+docsTechnologies: "TypeScript, JavaScript, Node.js, npm, Jekyll, Lighthouse, Pa11y, Linkinator, html-validator"
 ---
 
 Builds, serves, and audits a Jekyll site locally from a single CLI.

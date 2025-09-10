@@ -12,6 +12,8 @@ tech:
   - Ruby
   - RubyGems
   - Google Lighthouse
+docsDescription: "A minimalist, bare-bones theme for Jekyll that uses the Water.css framework. It was created as an up-to-date starter/skeleton theme for Jekyll, aiming to be lightweight while providing essential features for creating informational websites or blogs."
+docsTechnologies: "Jekyll, HTML, Water.css, Ruby, RubyGems, Google Lighthouse"
 ---
 
 Watery aims to be a clean foundation for new sites. It pairs Jekyll’s simplicity with Water.css for instant sensible defaults, accessible typography, and minimal styling overhead.

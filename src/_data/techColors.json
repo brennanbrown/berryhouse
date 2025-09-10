@@ -29,6 +29,9 @@
   "html": "#e34f26",
   "css": "#1572b6",
   "javascript": "#f7df1e",
+  "python": "#3776ab",
+  "pandoc": "#0ea5e9",
+  "pypandoc": "#93c5fd",
 
   "jekyll": "#cc0000",
   "ruby": "#cc342d",
@@ -46,11 +49,16 @@
   "water.css": "#0ea5e9",
   "hugo": "#ff4088",
   "forestry cms": "#2a9d8f",
+  "netlify": "#00C7B7",
+  "lighthouse": "#f97316",
+  "pa11y": "#ef4444",
+  "linkinator": "#22c55e",
+  "html-validator": "#3b82f6",
 
   "next.js": "#000000",
   "prisma": "#2d3748",
   "supabase": "#2ecc71",
 
   "beeminder": "#f59e0b",
-  "obisdian": "#7c3aed"
+  "obsidian": "#7c3aed"
 }
