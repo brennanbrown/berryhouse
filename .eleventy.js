@@ -16,6 +16,16 @@ module.exports = function (eleventyConfig) {
     }
   });
 
+  // Sort an array of templates by date descending (newest first)
+  eleventyConfig.addNunjucksFilter("sortByDateDesc", (arr) => {
+    if (!Array.isArray(arr)) return arr;
+    return [...arr].sort((a, b) => {
+      const ad = new Date(a.date || a.data?.date || 0).getTime();
+      const bd = new Date(b.date || b.data?.date || 0).getTime();
+      return bd - ad;
+    });
+  });
+
   // Collections
   eleventyConfig.addCollection("posts", (collectionApi) => {
     return collectionApi.getFilteredByGlob("src/blog/**/*.md").sort((a, b) => b.date - a.date);

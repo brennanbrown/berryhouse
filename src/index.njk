@@ -160,6 +160,7 @@ title: "Berry House — Web & Writing"
     {% if (recent | length) == 0 %}
       {% set recent = collections.searchIndex | default([]) %}
     {% endif %}
+    {% set recent = recent | sortByDateDesc %}
 
     {% if recent | length > 0 %}
     <div class="space-y-8">
