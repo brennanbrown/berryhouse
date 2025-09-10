@@ -1,21 +1,27 @@
----
-layout: layouts/base.njk
-title: enjoyment-work (Jekyll Theme)
-description: An academic, Roam-like Digital Garden Jekyll theme with Obsidian-friendly workflows.
-permalink: /portfolio/enjoyment-work/
-tags: [portfolio]
-technologies: [Jekyll, SCSS, Bootstrap 4, Ruby, Obsidian]
+----
+layout: layouts/portfolio.njk
+title: enjoyment-work — Research‑Focused Digital Garden
+description: An extensive Jekyll theme designed to have similar functionality to Roam Research. Academic/research‑focused with Obsidian‑friendly workflows.
 links:
   repo: https://github.com/brennanbrown/enjoyment-work
   demo: https://enjoyment-work.netlify.app
+tech:
+  - Jekyll
+  - HTML
+  - CSS
+  - Bootstrap 4
+  - SCSS
+  - Obsidian
+  - Ruby
+  - Simply Jekyll Search
 ---
 
-<section class="prose dark:prose-invert">
-  <h1>{{ title }}</h1>
-  <p>{{ description }}</p>
-  <p><strong>Tech:</strong> {{ technologies | join(', ') }}</p>
-  <p>
-    <a href="{{ links.demo }}" target="_blank" rel="noopener">Live demo</a> ·
-    <a href="{{ links.repo }}" target="_blank" rel="noopener">Source</a>
-  </p>
-</section>
+enjoyment‑work is a Digital Garden theme inspired by tools‑for‑thought like Roam Research. It’s designed for researchers and writers who want networked notes, backlinks, and fast publishing without sacrificing control. It integrates smoothly with Obsidian so you can write locally and publish cleanly.
+
+Highlights:
+
+- Bidirectional links and simple backlink views
+- Clean, responsive layout optimized for long‑form reading
+- Obsidian‑friendly folder structure and front matter
+- Lightweight search via Simply Jekyll Search
+- Accessible defaults and performance‑minded CSS

@@ -1,21 +1,25 @@
----
-layout: layouts/base.njk
-title: Purelog (Jekyll Theme)
-description: A responsive sidebar Jekyll theme built on Pure.css for writers and bloggers.
-permalink: /portfolio/purelog/
-tags: [portfolio]
-technologies: [Jekyll, Pure.css, Ruby]
+----
+layout: layouts/portfolio.njk
+title: Purelog — Sidebar Jekyll Theme for Writers
+description: A responsive sidebar Jekyll theme built on Pure.css for writers and bloggers. Lightweight yet featureful, with sections for blogging, notes, and daily journals.
 links:
   repo: https://github.com/brennanbrown/purelog
   demo: https://purelog.netlify.app
+tech:
+  - Jekyll
+  - HTML
+  - Pure.css
+  - Ruby
+  - RubyGems
+  - Simply Jekyll Search
 ---
 
-<section class="prose dark:prose-invert">
-  <h1>{{ title }}</h1>
-  <p>{{ description }}</p>
-  <p><strong>Tech:</strong> {{ technologies | join(', ') }}</p>
-  <p>
-    <a href="{{ links.demo }}" target="_blank" rel="noopener">Live demo</a> ·
-    <a href="{{ links.repo }}" target="_blank" rel="noopener">Source</a>
-  </p>
-</section>
+Purelog focuses on a clean reading experience with a timeless two‑pane layout. It’s tuned for writers who want structure without bloat, and includes optional sections for notes and daily entries alongside a traditional blog.
+
+Highlights:
+
+- Sidebar layout with clear information hierarchy
+- Lightweight and fast with Pure.css
+- Optional sections for notes and journals
+- Simple search integration via Simply Jekyll Search
+- Easy theming and content organization via front matter

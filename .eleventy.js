@@ -1,4 +1,6 @@
 const tagColors = require("./src/_data/tagColors.json");
+let techColors = {};
+try { techColors = require("./src/_data/techColors.json"); } catch {}
 
 module.exports = function (eleventyConfig) {
   // Passthrough static assets
@@ -14,6 +16,19 @@ module.exports = function (eleventyConfig) {
     } catch {
       return "";
     }
+  });
+
+  // Color helpers for badges
+  eleventyConfig.addNunjucksFilter("tagColor", (tag) => {
+    if (!tag) return "#6b7280"; // gray-500 fallback
+    const key = String(tag).toLowerCase();
+    return tagColors[key] || "#6b7280";
+  });
+
+  eleventyConfig.addNunjucksFilter("techColor", (tech) => {
+    if (!tech) return "#64748b"; // slate-500
+    const key = String(tech).toLowerCase();
+    return techColors[key] || "#64748b";
   });
 
   // Sort an array of templates by date descending (newest first)
