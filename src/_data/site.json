@@ -41,7 +41,12 @@
   },
   "webmentions": {
     "enabled": true,
-    "domain": "berryhouse.ca"
+    "domain": "berryhouse.ca",
+    "token": "5PH8DhJdG1q-ZMtj2uOg_g",
+    "feeds": {
+      "microformats": "https://webmention.io/api/mentions.html?token=5PH8DhJdG1q-ZMtj2uOg_g",
+      "atom": "https://webmention.io/api/mentions.atom?token=5PH8DhJdG1q-ZMtj2uOg_g"
+    }
   },
   "webring": {
     "enabled": false,
