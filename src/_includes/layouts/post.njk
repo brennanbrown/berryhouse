@@ -57,10 +57,10 @@ layout: layouts/base.njk
   <section class="mt-12 pt-8 border-t border-gray-200 dark:border-gray-700">
     <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6">
       <div class="flex items-start space-x-4">
-        <img class="w-16 h-16 rounded-full" src="/assets/profile.jpg" alt="{{ site.author }}" />
+        <img class="w-16 h-16 rounded-full" src="/assets/photos/brennan.jpg" alt="{{ site.author }}" />
         <div>
           <h3 class="font-semibold text-lg">About {{ site.author }}</h3>
-          <p class="text-gray-600 dark:text-gray-400 mt-1">Your author bio goes here. Describe yourself and what you write about.</p>
+          <p class="text-gray-600 dark:text-gray-400 mt-1">{{ site.bio.short }}</p>
           <div class="mt-3 flex space-x-4 text-sm">
             <a href="/about/" class="text-blue-600 hover:text-blue-800">More about me</a>
             <a href="/donate/" class="text-green-600 hover:text-green-800">Support my work</a>
@@ -71,14 +71,12 @@ layout: layouts/base.njk
   </section>
 
   <section class="mt-8">
-    {% if site.bio.long %}
     <div class="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-6 mb-8">
-      <h3 class="text-lg font-semibold mb-2">About {{ site.author }}</h3>
+      <h3 class="text-lg font-semibold mb-2">About {{ site.name }}</h3>
       <p class="text-gray-700 dark:text-gray-300">
-        {{ site.bio.long }}
+        {{ site.description }}
       </p>
     </div>
-    {% endif %}
     {% if site.newsletter.enabled %}
     <div class="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-6 text-center">
       <h3 class="font-semibold text-lg mb-2">{{ site.newsletter.title }}</h3>
