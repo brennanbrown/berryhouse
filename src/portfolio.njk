@@ -10,7 +10,7 @@ permalink: /portfolio/
 <section class="space-y-8">
   {% if collections.portfolio and collections.portfolio.length %}
     <ul class="grid gap-6 grid-cols-2 lg:grid-cols-3">
-      {% for item in collections.portfolio | reverse %}
+      {% for item in collections.portfolio | sortByDateDesc %}
         {% set slug = (item.url or '') | replace('/portfolio/', '') | replace('/', '') %}
         {% set itemTitle = item.data.title or item.fileSlug %}
         {% set itemDesc = item.data.description or item.data.docsDescription %}
