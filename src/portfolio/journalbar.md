@@ -1,4 +1,5 @@
--layout: layouts/portfolio.njk
+---
+layout: layouts/portfolio.njk
 title: journalbar — Quantified Self Blog
 description: A personal blog for self‑quantification and improvement, with weekly Beeminder goal updates and accountability posts.
 links:

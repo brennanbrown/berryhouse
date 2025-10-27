@@ -9,21 +9,27 @@ permalink: /portfolio/
 
 <section class="space-y-8">
   {% if collections.portfolio and collections.portfolio.length %}
-    <ul class="grid gap-6 md:grid-cols-2">
+    <ul class="grid gap-6 grid-cols-2 lg:grid-cols-3">
       {% for item in collections.portfolio | reverse %}
-        <li class="border rounded p-4 bg-[var(--surface)]">
-          {% set slug = (item.url or '') | replace('/portfolio/', '') | replace('/', '') %}
+        {% set slug = (item.url or '') | replace('/portfolio/', '') | replace('/', '') %}
+        {% set itemTitle = item.data.title or item.fileSlug %}
+        {% set itemDesc = item.data.description or item.data.docsDescription %}
+        {% set itemTech = item.data.technologies or item.data.tech %}
+        {% if not itemTech and item.data.docsTechnologies %}
+          {% set itemTech = item.data.docsTechnologies | split(',') | map('trim') %}
+        {% endif %}
+        <li class="border rounded p-3 md:p-4 bg-[var(--surface)]">
           {% if slug %}
           <a href="{{ item.url }}" class="block mb-3">
-            <img src="/assets/screenshots/{{ slug }}-live.png" alt="{{ item.data.title }} screenshot" class="w-full aspect-square object-cover rounded border" loading="lazy" />
+            <img src="/assets/screenshots/{{ slug }}-live.png" alt="{{ itemTitle }} screenshot" class="w-full aspect-square object-cover rounded border" loading="lazy" />
           </a>
           {% endif %}
-          <h2 class="text-xl font-semibold"><a href="{{ item.url }}">{{ item.data.title }}</a></h2>
-          {% if item.data.description %}
-          <p class="text-gray-700 dark:text-gray-300">{{ item.data.description }}</p>
+          <h2 class="text-lg md:text-xl font-semibold"><a href="{{ item.url }}">{{ itemTitle }}</a></h2>
+          {% if itemDesc %}
+          <p class="text-gray-700 dark:text-gray-300">{{ itemDesc }}</p>
           {% endif %}
-          {% if item.data.technologies %}
-          <p class="text-sm text-gray-500 mt-2">Tech: {{ item.data.technologies | join(', ') }}</p>
+          {% if itemTech %}
+          <p class="text-sm text-gray-500 mt-2">Tech: {{ itemTech | join(', ') }}</p>
           {% endif %}
         </li>
       {% endfor %}
@@ -37,3 +43,4 @@ permalink: /portfolio/
     <p class="text-sm text-gray-600 dark:text-gray-400">See <a href="/services/" class="underline">Services</a> or <a href="/contact/" class="underline">Contact</a> to get started.</p>
   </div>
 </section>
+

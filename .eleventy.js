@@ -46,6 +46,11 @@ module.exports = function (eleventyConfig) {
     return collectionApi.getFilteredByGlob("src/blog/**/*.md").sort((a, b) => b.date - a.date);
   });
 
+  // Portfolio collection from markdown files in src/portfolio
+  eleventyConfig.addCollection("portfolio", (collectionApi) => {
+    return collectionApi.getFilteredByGlob("src/portfolio/*.md");
+  });
+
   // Build a lightweight search index from blog posts
   eleventyConfig.addCollection("searchIndex", (collectionApi) => {
     const posts = collectionApi.getFilteredByGlob("src/blog/**/*.md");

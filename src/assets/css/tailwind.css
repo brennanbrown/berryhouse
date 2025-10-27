@@ -224,9 +224,24 @@
   transition: width 0.3s ease;
 }
 
-/* Nav items - no hover effects to prevent jitter */
+/* Nav items - remove underline and keep color inherit */
 .nav-item {
   color: inherit;
+  text-decoration: none !important;
+  text-underline-offset: 0;
+}
+.nav-item:hover,
+.nav-item:focus {
+  text-decoration: underline !important;
+}
+
+/* Header and primary nav links: never underline */
+@layer base {
+  header a,
+  nav a {
+    text-decoration: none !important;
+    text-underline-offset: 0;
+  }
 }
 
 /* Remove hover transform that could cause layout shifts */

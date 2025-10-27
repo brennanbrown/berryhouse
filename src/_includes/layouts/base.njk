@@ -193,7 +193,7 @@
         <span class="bar-2 block w-5 h-0.5 bg-gray-700 dark:bg-gray-200 mb-1 transition-opacity"></span>
         <span class="bar-3 block w-5 h-0.5 bg-gray-700 dark:bg-gray-200 transition-transform"></span>
       </button>
-      <a class="text-lg font-semibold" href="/">{{ site.name }}</a>
+      <a class="text-lg font-semibold no-underline decoration-transparent hover:decoration-transparent" href="/">{{ site.name }}</a>
       <form class="ml-auto hidden sm:block" role="search" aria-label="Site" action="/search/" method="get">
         <label class="sr-only" for="q">Search</label>
         <input id="q" name="q" type="search" placeholder="Search…" class="px-3 py-2 border rounded w-64" />
@@ -222,7 +222,7 @@
         {% for item in navItems %}
           {% set isActive = (item.path == '/' and url == '/') or (item.path != '/' and (url | slice(0, item.path | length) == item.path)) %}
           <li>
-            <a href="{{ item.path }}" class="nav-item block py-2 text-red-600 dark:text-red-400 {% if isActive %}underline font-semibold{% endif %}"
+            <a href="{{ item.path }}" class="nav-item block py-2 no-underline decoration-transparent hover:decoration-transparent text-red-600 dark:text-red-400 {% if isActive %}font-semibold{% endif %}"
                {% if isActive %}aria-current="page"{% endif %}>{{ item.icon }} {{ item.title }}</a>
           </li>
         {% endfor %}

@@ -4,7 +4,7 @@ title: Moneytree — Offline Personal Finance PWA
 description: Privacy‑first budgeting and transactions app with robust offline support using IndexedDB and service workers. No external APIs.
 links:
   repo: https://github.com/brennanbrown/moneytree
-  demo: https://github.com/brennanbrown/moneytree
+  demo: https://moneytree-pwa.netlify.app/
 tech:
   - Eleventy (11ty)
   - Tailwind CSS

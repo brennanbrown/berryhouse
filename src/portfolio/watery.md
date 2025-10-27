@@ -1,4 +1,4 @@
-----
+---
 layout: layouts/portfolio.njk
 title: Watery — Minimalist Jekyll Starter on Water.css
 description: A minimalist, bare‑bones Jekyll theme using Water.css. A modern starter/skeleton focused on speed and essential features for blogs and info sites.

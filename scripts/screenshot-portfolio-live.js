@@ -47,6 +47,19 @@ async function loadPortfolioDemos() {
 (async () => {
   await ensureDir(OUT_DIR);
   const items = await loadPortfolioDemos();
+  // Optional: filter by slug passed as first positional arg or --slug=<value>
+  const arg = process.argv[2] || '';
+  let slugArg = arg;
+  if (!slugArg) {
+    const slugFlag = (process.argv.find(a => a.startsWith('--slug=')) || '').split('=')[1];
+    slugArg = slugFlag || '';
+  }
+  const filtered = slugArg ? items.filter(i => i.slug === slugArg) : items;
+  if (slugArg && filtered.length === 0) {
+    console.error(`No portfolio item found with slug: ${slugArg}`);
+    process.exit(1);
+  }
+
   if (items.length === 0) {
     console.error('No portfolio demo URLs found.');
     process.exit(1);
@@ -57,7 +70,7 @@ async function loadPortfolioDemos() {
   const page = await context.newPage();
 
   const results = [];
-  for (const { slug, demo } of items) {
+  for (const { slug, demo } of filtered) {
     const outPath = path.join(OUT_DIR, `${slug}-live.png`);
     try {
       await page.goto(demo, { waitUntil: 'domcontentloaded', timeout: 45000 });

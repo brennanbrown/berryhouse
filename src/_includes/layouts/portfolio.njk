@@ -2,48 +2,52 @@
 layout: layouts/base.njk
 ---
 {% set slug = (page.url or '') | replace('/portfolio/', '') | replace('/', '') %}
-<section class="prose dark:prose-invert">
-  {% if title %}
-    <h1>{{ title }}</h1>
-  {% endif %}
+<section class="space-y-6">
+  <div class="lg:grid lg:grid-cols-2 lg:gap-6 items-start">
+    {% if slug %}
+      <figure class="my-4 lg:my-0">
+        <img src="/assets/screenshots/{{ slug }}-live.png" alt="{{ title }} live screenshot" class="block w-full h-auto rounded border" loading="lazy" />
+        {% if description %}
+          <figcaption class="text-sm text-gray-600 dark:text-gray-400 mt-2">{{ description }}</figcaption>
+        {% endif %}
+      </figure>
+    {% endif %}
 
-  {% if slug %}
-    <figure class="my-4">
-      <img src="/assets/screenshots/{{ slug }}-live.png" alt="{{ title }} live screenshot" class="block w-full h-auto max-w-4xl mx-auto rounded border" loading="lazy" />
-      {% if description %}
-        <figcaption class="text-sm text-gray-600 dark:text-gray-400 mt-2">{{ description }}</figcaption>
+    <div class="prose dark:prose-invert">
+      {% if title %}
+        <h1>{{ title }}</h1>
       {% endif %}
-    </figure>
-  {% endif %}
 
-  {% if links or tech %}
-  <div class="not-prose mb-6 flex flex-wrap items-center gap-3">
-    {% if links and links.repo %}
-      <a href="{{ links.repo }}" target="_blank" rel="noopener" class="px-3 py-1 rounded-lg border border-red-600 text-red-700 dark:text-red-300 hover:bg-red-50 dark:hover:bg-red-900/20 no-underline decoration-transparent hover:decoration-transparent">Repo</a>
-    {% endif %}
-    {% if links and links.demo %}
-      <a href="{{ links.demo }}" target="_blank" rel="noopener" class="px-3 py-1 rounded-lg bg-red-600 text-white hover:bg-red-700 no-underline decoration-transparent hover:decoration-transparent">Live Demo</a>
-    {% endif %}
-    {% if tech and tech.length %}
-      <div class="flex flex-wrap gap-2 ml-auto">
-        {% for t in tech %}
-          <span class="px-2.5 py-1 text-xs rounded-full text-white" style="background-color: {{ t | techColor }}">{{ t }}</span>
-        {% endfor %}
+      {% if links or tech %}
+      <div class="not-prose mb-6 flex flex-wrap items-center gap-3">
+        {% if links and links.repo %}
+          <a href="{{ links.repo }}" target="_blank" rel="noopener" class="px-3 py-1 rounded-lg border border-red-600 text-red-700 dark:text-red-300 hover:bg-red-50 dark:hover:bg-red-900/20 no-underline decoration-transparent hover:decoration-transparent">Repo</a>
+        {% endif %}
+        {% if links and links.demo %}
+          <a href="{{ links.demo }}" target="_blank" rel="noopener" class="px-3 py-1 rounded-lg bg-red-600 text-white hover:bg-red-700 no-underline decoration-transparent hover:decoration-transparent">Live Demo</a>
+        {% endif %}
+        {% if tech and tech.length %}
+          <div class="flex flex-wrap gap-2 ml-auto">
+            {% for t in tech %}
+              <span class="px-2.5 py-1 text-xs rounded-full text-white" style="background-color: {{ t | techColor }}">{{ t }}</span>
+            {% endfor %}
+          </div>
+        {% endif %}
       </div>
-    {% endif %}
-  </div>
-  {% endif %}
+      {% endif %}
 
-  {% if docsDescription or docsTechnologies %}
-  <div class="bg-[var(--surface)] rounded-lg p-4 border border-gray-200 dark:border-gray-700 mb-6">
-    {% if docsDescription %}
-      <p class="mb-2"><strong>Description:</strong> {{ docsDescription }}</p>
-    {% endif %}
-    {% if docsTechnologies %}
-      <p class="mb-0"><strong>Technologies:</strong> {{ docsTechnologies }}</p>
-    {% endif %}
-  </div>
-  {% endif %}
+      {% if docsDescription or docsTechnologies %}
+      <div class="bg-[var(--surface)] rounded-lg p-4 border border-gray-200 dark:border-gray-700 mb-6">
+        {% if docsDescription %}
+          <p class="mb-2"><strong>Description:</strong> {{ docsDescription }}</p>
+        {% endif %}
+        {% if docsTechnologies %}
+          <p class="mb-0"><strong>Technologies:</strong> {{ docsTechnologies }}</p>
+        {% endif %}
+      </div>
+      {% endif %}
 
-  {{ content | safe }}
+      {{ content | safe }}
+    </div>
+  </div>
 </section>

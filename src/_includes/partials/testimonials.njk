@@ -16,7 +16,7 @@
     {% for t in testimonials | default([]) %}
       <li class="p-4 rounded border bg-white dark:bg-gray-900 flex gap-3">
         {% if t.profile_picture %}
-          <img src="{{ t.profile_picture }}" alt="Photo of {{ t.name }}" class="w-12 h-12 rounded-full object-cover" loading="lazy" />
+          <img src="{{ t.profile_picture }}" alt="Photo of {{ t.name }}" class="w-16 h-16 md:w-20 md:h-20 rounded-full object-cover flex-none" loading="lazy" />
         {% endif %}
         <div>
           <p class="text-sm text-gray-600 dark:text-gray-400">{{ stars(t.stars | default(5)) }}</p>

@@ -4,7 +4,7 @@ title: Bearminder — Bear → Beeminder Menubar App
 description: A macOS menubar app that tracks daily word counts from the Bear app and posts them to Beeminder goals. Secure tokens in Keychain, runs on-demand or hourly, privacy-first.
 links:
   repo: https://github.com/brennanbrown/bearminder
-  demo: https://github.com/brennanbrown/bearminder
+  demo: https://bearminder.netlify.app
 tech:
   - Swift
   - macOS AppKit
