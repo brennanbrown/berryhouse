@@ -52,6 +52,8 @@
   <link rel="webmention" href="https://webmention.io/{{ site.url | replace('https://', '') | replace('http://', '') }}/webmention" />
   <link rel="pingback" href="https://webmention.io/{{ site.url | replace('https://', '') | replace('http://', '') }}/xmlrpc" />
   <link rel="stylesheet" href="/assets/css/build.css" />
+  <!-- Font Awesome (Free) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="alternate" type="application/atom+xml" title="{{ site.name }} Feed" href="/feed.xml" />
   {# Favicon and theme color #}
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
@@ -120,6 +122,9 @@
           {% endif %}
           {% if site.social and site.social.twitter %}
             {% set sameAs = sameAs.concat(['https://twitter.com/' + (site.social.twitter | replace('@',''))]) %}
+          {% endif %}
+          {% if site.social and site.social.linkedin %}
+            {% set sameAs = sameAs.concat([site.social.linkedin]) %}
           {% endif %}
           {% for link in sameAs %}
             "{{ link }}"{% if not loop.last %},{% endif %}
@@ -287,6 +292,13 @@
             <li>
               <a href="{{ site.social.mastodon | replace('@', 'https://') | replace('@', '/') }}" target="_blank" rel="me noopener" class="inline-flex items-center gap-2 hover:text-blue-600">
                 {{ icon('mastodon', 'w-4 h-4') }} <span>Mastodon</span>
+              </a>
+            </li>
+            {% endif %}
+            {% if site.social.linkedin %}
+            <li>
+              <a href="{{ site.social.linkedin }}" target="_blank" rel="me noopener" class="inline-flex items-center gap-2 hover:text-blue-600">
+                {{ icon('linkedin', 'w-4 h-4') }} <span>LinkedIn</span>
               </a>
             </li>
             {% endif %}

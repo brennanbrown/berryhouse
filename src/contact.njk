@@ -28,6 +28,12 @@ title: Contact
         <a href="{{ site.social.mastodon | replace('@', 'https://') | replace('@', '/') }}" target="_blank" rel="noopener" class="hover:text-blue-600">Mastodon</a>
       </li>
       {% endif %}
+      {% if site.social.linkedin %}
+      <li class="flex items-center gap-3">
+        <span class="text-blue-600">in</span>
+        <a href="{{ site.social.linkedin }}" target="_blank" rel="noopener" class="hover:text-blue-600">LinkedIn</a>
+      </li>
+      {% endif %}
     </ul>
   </div>
 
