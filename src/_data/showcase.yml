@@ -1,0 +1,177 @@
+sections:
+  - title: IndieWeb Leaders
+    items:
+      - name: Aaron Parecki
+        url: https://aaronparecki.com
+        technologies: Custom PHP CMS (p3k), microformats2
+        indieWeb: h-card, webmentions (send/receive), IndieAuth, POSSE, Micropub
+        notable: Complete webmention implementation with manual form, robust mf2 parsing
+        slug: aaron-parecki
+      - name: Max Böck
+        url: https://mxb.dev
+        technologies: Eleventy, CSS custom properties
+        indieWeb: Webmentions, microformats2, RSS
+        notable: Ten color themes, perfect Lighthouse scores, static IndieWeb writing
+        slug: max-bock
+      - name: Jeremy Keith
+        url: https://adactio.com
+        technologies: Custom CMS, progressive enhancement
+        indieWeb: Webmentions with manual form, h-entry, h-card
+        notable: Early webmention adopter (since 2013), deep archive
+        slug: jeremy-keith
+
+  - title: Eleventy Excellence
+    items:
+      - name: Zach Leatherman
+        url: https://www.zachleat.com
+        technologies: Eleventy, progressive enhancement
+        indieWeb: h-card, post metadata, RSS
+        notable: Eleventy creator, award-winning OSS maintainer
+        slug: zach-leatherman
+      - name: Stephanie Eckles
+        url: https://thinkdobecreate.com
+        technologies: Eleventy, modern CSS, accessibility-first
+        indieWeb: RSS, semantic markup, h-card
+        notable: Creator of ModernCSS.dev and 11ty.rocks; community educator
+        slug: stephanie-eckles
+      - name: Andy Bell
+        url: https://piccalil.li
+        technologies: Eleventy, CUBE CSS, modern CSS
+        indieWeb: RSS, semantic HTML, microformats
+        notable: Co-author of Every Layout; accessibility advocate
+        slug: andy-bell
+
+  - title: Creative Showcases
+    items:
+      - name: Cassie Evans
+        url: https://cassie.codes
+        technologies: GSAP, SVG, modern JavaScript
+        indieWeb: Personal domain, creative h-card
+        notable: Captivating SVG animations; light/dark mode; superb UX
+        slug: cassie-evans
+      - name: Paul Robert Lloyd
+        url: https://paulrobertlloyd.com
+        technologies: Eleventy, Indiekit
+        indieWeb: h-card, webmentions, Micropub, diverse post types
+        notable: Built Indiekit for accessible IndieWeb; comprehensive personal site
+        slug: paul-robert-lloyd
+      - name: Sophie Koonin
+        url: https://localghost.dev
+        technologies: Eleventy, modern CSS with retro aesthetics
+        indieWeb: Webmentions, h-card, personal domain
+        notable: Nostalgic design, accessibility advocate, pixel art garden theme
+        slug: sophie-koonin
+
+  - title: Technical Deep-Dives
+    items:
+      - name: Nicolas Hoizey
+        url: https://www.nicolas-hoizey.com
+        technologies: Eleventy with pack11ty, Rollup, Sass, SW, responsive images
+        indieWeb: Webmentions, microformats2, h-card, rich metadata
+        notable: Author of eleventy-plugin-images-responsiver; short URL manager
+        slug: nicolas-hoizey
+      - name: Remy Sharp
+        url: https://remysharp.com
+        technologies: Custom build, modern JavaScript, Node.js
+        indieWeb: Personal domain, webmentions (webmention.app)
+        notable: JS Bin creator; coined "polyfill"; ffconf organizer; unrot.link
+        slug: remy-sharp
+      - name: Raymond Camden
+        url: https://www.raymondcamden.com
+        technologies: Eleventy, Markdown workflow
+        indieWeb: Comprehensive RSS, long-term content ownership
+        notable: 6,700+ posts; educator; JavaScript and Vue expertise
+        slug: raymond-camden
+      - name: Lea Verou
+        url: https://lea.verou.me
+        technologies: Eleventy, custom CSS innovations
+        indieWeb: Personal domain, extensive RSS, h-card
+        notable: Creator of PrismJS and Mavo; CSS specs; W3C TAG member
+        slug: lea-verou
+      - name: Kitty Giraudel
+        url: https://kittygiraudel.com
+        technologies: Custom build, accessible JS
+        indieWeb: Personal domain, blog archive, h-card
+        notable: Creator of a11y-dialog; Sass Guidelines; diversity advocacy
+        slug: kitty-giraudel
+      - name: Sara Joy
+        url: https://sarajoy.dev
+        technologies: Astro; also minimal HTML/CSS site
+        indieWeb: Personal domain since 1999; ownership emphasis
+        notable: Accessibility champion; SOTB 2025 speaker
+        slug: sara-joy
+
+  - title: Digital Gardens & Personal Wikis
+    items:
+      - name: Tom Critchlow
+        url: https://tomcritchlow.com
+        technologies: Jekyll, custom wiki templates
+        indieWeb: Personal domain, internal linking, RSS
+        notable: Interconnected long-form thinking; SEO MBA founder
+        slug: tom-critchlow
+      - name: Andy Matuschak
+        url: https://andymatuschak.org
+        technologies: Custom JS with unique UI patterns
+        indieWeb: Bi-directional linking, evergreen notes
+        notable: Pioneering public notes interface
+        slug: andy-matuschak
+
+  - title: Performance & Developer Experience
+    items:
+      - name: Nicolas Hoizey
+        url: https://www.nicolas-hoizey.com
+        technologies: Eleventy with pack11ty (Rollup, responsive images, SW)
+        indieWeb: Webmentions, microformats2, h-card
+        notable: Top Lighthouse scores; Eleventy community contributions
+        slug: nicolas-hoizey
+      - name: Remy Sharp
+        url: https://remysharp.com
+        technologies: Custom Node.js, modern JavaScript
+        indieWeb: Personal domain; webmentions via webmention.app
+        notable: unrot.link; ffconf; hardware restoration writing
+        slug: remy-sharp
+
+  - title: Modern Framework Implementations
+    items:
+      - name: Astro Paper Theme Examples
+        url: https://astro-paper.pages.dev
+        technologies: Astro, Tailwind CSS, fuzzy search, type-safe markdown
+        indieWeb: RSS, semantic markup, sitemap
+        notable: Accessibility-first; perfect Lighthouse; dark mode; OG images
+        slug: astro-paper-examples
+      - name: Dave Rupert
+        url: https://daverupert.com
+        technologies: Custom build, modern web standards
+        indieWeb: Personal blog, podcast integration, RSS
+        notable: ShopTalk co-host; Luro co-founder; long-time dev advocate
+        slug: dave-rupert
+
+  - title: Community Education & Resources
+    items:
+      - name: Raymond Camden
+        url: https://www.raymondcamden.com
+        technologies: Eleventy, Markdown-based workflow
+        indieWeb: Extensive RSS, long-term content ownership
+        notable: Massive educational archive; decades of tutorials
+        slug: raymond-camden
+      - name: 11ty.rocks
+        url: https://11ty.rocks
+        technologies: Eleventy, modern CSS, accessibility patterns
+        indieWeb: RSS, semantic markup, community-driven
+        notable: Extensive component library; membership tutorial
+        slug: 11ty-rocks
+
+  - title: Minimal & Focused Designs
+    items:
+      - name: Brian Cantoni
+        url: https://www.cantoni.org
+        technologies: Eleventy, static generation from 650 posts
+        indieWeb: Preserved URIs; personal domain
+        notable: Detailed WordPress→Eleventy migration write-up
+        slug: brian-cantoni
+      - name: Bear Blog Platform
+        url: https://bearblog.dev
+        technologies: Jekyll-style minimal aesthetic; minimal JS; auto themes
+        indieWeb: RSS, tags, personal domain
+        notable: 100 PageSpeed; no trackers; bare-bones
+        slug: bear-blog
