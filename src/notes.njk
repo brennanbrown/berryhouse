@@ -6,7 +6,8 @@ pagination:
   size: 10
   alias: items
   reverse: true
-permalink: "/notes/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber + 1 }}/{% endif %}"
+permalink: false
+eleventyExcludeFromCollections: true
 ---
 
 <h1 class="text-2xl font-bold mb-4">Notes</h1>

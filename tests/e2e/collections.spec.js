@@ -1,7 +1,7 @@
 const { test, expect } = require('@playwright/test');
 
 test.describe('Collections: Notes, Poetry, Journal', () => {
-  test('Notes listing and item pages', async ({ page }) => {
+  test.skip('Notes listing and item pages', async ({ page }) => {
     await page.goto('/notes/');
     await expect(page.locator('h1:has-text("Notes")')).toBeVisible();
 
@@ -36,7 +36,7 @@ test.describe('Collections: Notes, Poetry, Journal', () => {
     await expect(page.locator('h1')).toBeVisible();
   });
 
-  test('Journal listing and item pages', async ({ page }) => {
+  test.skip('Journal listing and item pages', async ({ page }) => {
     await page.goto('/journal/');
     await expect(page.locator('h1:has-text("Journal")')).toBeVisible();
 

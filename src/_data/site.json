@@ -63,11 +63,11 @@
     "microformats": true
   },
   "sections": {
-    "notes": { "enabled": true, "title": "Digital Garden", "path": "/garden/" },
-    "journal": { "enabled": true, "title": "Journal", "path": "/journal/" },
+    "notes": { "enabled": false, "title": "Digital Garden", "path": "/garden/" },
+    "journal": { "enabled": false, "title": "Journal", "path": "/journal/" },
     "poetry": { "enabled": false, "title": "Poetry", "path": "/poetry/" },
     "portfolio": { "enabled": true, "title": "Portfolio", "path": "/portfolio/" },
-    "projects": { "enabled": true, "title": "Projects", "path": "/projects/" },
+    "projects": { "enabled": false, "title": "Projects", "path": "/projects/" },
     "resume": { "enabled": true, "title": "Résumé", "path": "/resume/" },
     "type": { "enabled": false, "title": "Type", "path": "/type/" },
     "links": { "enabled": true, "title": "Links", "path": "/links/" },

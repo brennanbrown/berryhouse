@@ -3,5 +3,22 @@ layout: layouts/base.njk
 permalink: "/accessibility/"
 title: Accessibility
 ---
+
 <h1 class="text-2xl font-bold mb-4">Accessibility</h1>
-<p>This site aims for WCAG 2.1 AA. Use the A11y menu in the header to adjust font size, contrast, and motion preferences. Preferences are saved in your browser.</p>
+<p class="mb-6">This site aims for WCAG 2.1 AA. Use the A11y menu in the header to adjust font size, contrast, and motion preferences. Preferences are saved in your browser.</p>
+
+<h2 class="text-lg font-semibold mb-2">What we commit to</h2>
+<ul class="list-disc pl-6 space-y-1 mb-6">
+  <li>Semantic HTML and meaningful landmarks for assistive tech.</li>
+  <li>Keyboard‑accessible navigation, focus styles, and skip links.</li>
+  <li>Sufficient color contrast and dark/light theme parity.</li>
+  <li>Reduced‑motion mode and respectful animations.</li>
+  <li>Alt text for meaningful images; decorative images marked appropriately.</li>
+  <li>Performance budgets to keep pages fast on low‑end devices.</li>
+  <li>Continuous testing with automated and manual checks.</li>
+  <li>Plain‑language content with clear hierarchy.</li>
+  <li>Privacy‑respecting analytics; no invasive tracking.</li>
+  <li>Ongoing improvements informed by user feedback.</li>
+</ul>
+
+<p>If you encounter an accessibility issue, please email <a class="text-blue-600 dark:text-blue-400 hover:underline" href="mailto:{{ site.email }}">{{ site.email }}</a>. We’ll prioritize fixes promptly.</p>

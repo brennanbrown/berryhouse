@@ -11,6 +11,11 @@
   status = 200
 
 [[redirects]]
+  from = "/donate"
+  to = "/support/"
+  status = 301
+
+[[redirects]]
   from = "/feed"
   to = "/feed.xml"
   status = 301

@@ -7,6 +7,38 @@ title: Style Guide
 
 <div class="space-y-12">
   <section>
+    <h2 class="text-xl font-semibold mb-4">Design Tokens</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div>
+        <h3 class="font-medium mb-2">Colors</h3>
+        <div class="grid grid-cols-4 gap-3 text-xs">
+          <div class="space-y-1"><div class="h-10 w-full rounded bg-red-600"></div><div>red-600</div></div>
+          <div class="space-y-1"><div class="h-10 w-full rounded bg-rose-600"></div><div>rose-600</div></div>
+          <div class="space-y-1"><div class="h-10 w-full rounded bg-slate-700"></div><div>slate-700</div></div>
+          <div class="space-y-1"><div class="h-10 w-full rounded bg-gray-200 dark:bg-gray-700"></div><div>border</div></div>
+        </div>
+      </div>
+      <div>
+        <h3 class="font-medium mb-2">Spacing</h3>
+        <ul class="text-sm space-y-1">
+          <li>xs: 0.25rem</li>
+          <li>sm: 0.5rem</li>
+          <li>md: 1rem</li>
+          <li>lg: 1.5rem</li>
+          <li>xl: 2rem</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-medium mb-2">Radius & Shadows</h3>
+        <div class="flex items-center gap-4">
+          <div class="h-10 w-16 rounded bg-[var(--surface)] border"></div>
+          <div class="h-10 w-16 rounded-lg bg-[var(--surface)] border shadow"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
     <h2 class="text-xl font-semibold mb-4">Typography</h2>
     <div class="space-y-4">
       <div>
@@ -21,24 +53,12 @@ title: Style Guide
   </section>
 
   <section>
-    <h2 class="text-xl font-semibold mb-4">Colors</h2>
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-      <div class="space-y-2">
-        <div class="w-full h-16 bg-blue-600 rounded"></div>
-        <p class="text-sm">Primary Blue</p>
-      </div>
-      <div class="space-y-2">
-        <div class="w-full h-16 bg-gray-600 rounded"></div>
-        <p class="text-sm">Gray</p>
-      </div>
-      <div class="space-y-2">
-        <div class="w-full h-16 bg-green-600 rounded"></div>
-        <p class="text-sm">Success Green</p>
-      </div>
-      <div class="space-y-2">
-        <div class="w-full h-16 bg-red-600 rounded"></div>
-        <p class="text-sm">Error Red</p>
-      </div>
+    <h2 class="text-xl font-semibold mb-4">Buttons</h2>
+    <div class="flex flex-wrap gap-4">
+      <a class="px-4 py-2 rounded bg-red-600 text-white hover:bg-red-700" href="#">Primary</a>
+      <a class="px-4 py-2 rounded border border-red-600 text-red-700 dark:text-red-300 hover:bg-red-50 dark:hover:bg-red-900/20" href="#">Outline</a>
+      <a class="px-4 py-2 rounded bg-gray-800 text-white hover:bg-gray-900" href="#">Neutral</a>
+      <a class="px-4 py-2 rounded border border-gray-300 hover:bg-gray-50" href="#">Secondary</a>
     </div>
   </section>
 
@@ -47,11 +67,24 @@ title: Style Guide
     
     <div class="space-y-6">
       <div>
-        <h3 class="text-lg font-medium mb-2">Buttons</h3>
-        <div class="flex space-x-4">
-          <button class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Primary</button>
-          <button class="px-4 py-2 border border-gray-300 rounded hover:bg-gray-50">Secondary</button>
-        </div>
+        <h3 class="text-lg font-medium mb-2">Form Inputs</h3>
+        <form class="grid md:grid-cols-2 gap-4">
+          <label class="block text-sm">
+            <span class="block mb-1">Name</span>
+            <input class="w-full px-3 py-2 border rounded" placeholder="Jane Doe" />
+          </label>
+          <label class="block text-sm">
+            <span class="block mb-1">Email</span>
+            <input type="email" class="w-full px-3 py-2 border rounded" placeholder="you@example.com" />
+          </label>
+          <label class="block md:col-span-2 text-sm">
+            <span class="block mb-1">Message</span>
+            <textarea rows="4" class="w-full px-3 py-2 border rounded" placeholder="Write something…"></textarea>
+          </label>
+          <div>
+            <button class="px-4 py-2 rounded bg-red-600 text-white hover:bg-red-700">Submit</button>
+          </div>
+        </form>
       </div>
 
       <div>
@@ -68,6 +101,16 @@ title: Style Guide
         <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-6 max-w-md">
           <h4 class="font-semibold mb-2">Card Title</h4>
           <p class="text-gray-600 dark:text-gray-400">This is an example card component with some content.</p>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="text-lg font-medium mb-2">Alerts</h3>
+        <div class="space-y-3 text-sm">
+          <div class="p-3 border rounded bg-green-50 border-green-300 text-green-800 dark:bg-green-900/20 dark:text-green-200">Success: Your changes have been saved.</div>
+          <div class="p-3 border rounded bg-yellow-50 border-yellow-300 text-yellow-800 dark:bg-yellow-900/20 dark:text-yellow-200">Warning: Check the required fields.</div>
+          <div class="p-3 border rounded bg-red-50 border-red-300 text-red-800 dark:bg-red-900/20 dark:text-red-200">Error: Something went wrong.</div>
+          <div class="p-3 border rounded bg-blue-50 border-blue-300 text-blue-800 dark:bg-blue-900/20 dark:text-blue-200">Info: Heads up about this section.</div>
         </div>
       </div>
     </div>
@@ -97,9 +140,29 @@ title: Style Guide
       <pre><code>// Code block example
 function example() {
   return "Hello, world!";
-}</code></pre>
+}
+</code></pre>
 
       <p>Here's some text with <code>inline code</code> and a <a href="#">link example</a>.</p>
     </div>
+  </section>
+
+  <section>
+    <h2 class="text-xl font-semibold mb-4">Layout</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+      <div class="p-3 text-center rounded border">1</div>
+      <div class="p-3 text-center rounded border">2</div>
+      <div class="p-3 text-center rounded border">3</div>
+      <div class="p-3 text-center rounded border">4</div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="text-xl font-semibold mb-4">Accessibility Notes</h2>
+    <ul class="list-disc pl-6 text-sm space-y-1">
+      <li>Buttons use visible focus and adequate color contrast.</li>
+      <li>Form fields have associated labels and large click targets.</li>
+      <li>Cards and alerts avoid color‑only meaning; include icons/labels if needed.</li>
+    </ul>
   </section>
 </div>

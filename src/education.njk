@@ -9,12 +9,77 @@ permalink: /education/
   <h1>Education</h1>
   <p>Learn the fundamentals of JAMstack, IndieWeb, and Digital Gardens—concepts that power a faster, safer, and more human web. These primers include practical steps, recommended tools, and accessible references to help you ship confidently.</p>
 
-  <h2>Primers</h2>
-  <ul>
-    <li><a href="/education/what-is-jamstack/">What is JAMstack?</a></li>
-    <li><a href="/education/understanding-indieweb/">Understanding the IndieWeb</a></li>
-    <li><a href="/education/exploring-digital-gardens/">Exploring Digital Gardens</a></li>
-  </ul>
+  <h2>Featured guides</h2>
+  <div class="not-prose grid md:grid-cols-3 gap-4">
+    <a href="/education/what-is-jamstack/" class="block border rounded-lg p-4 bg-[var(--surface)] hover:border-red-300 dark:hover:border-red-800 transition-colors">
+      <h3 class="font-semibold mb-1">What is JAMstack?</h3>
+      <p class="text-sm text-gray-600 dark:text-gray-400">Static‑first, API‑driven sites with better performance and security.</p>
+    </a>
+    <a href="/education/understanding-indieweb/" class="block border rounded-lg p-4 bg-[var(--surface)] hover:border-red-300 dark:hover:border-red-800 transition-colors">
+      <h3 class="font-semibold mb-1">Understanding the IndieWeb</h3>
+      <p class="text-sm text-gray-600 dark:text-gray-400">Own your content; use open standards like Microformats and Webmention.</p>
+    </a>
+    <a href="/education/exploring-digital-gardens/" class="block border rounded-lg p-4 bg-[var(--surface)] hover:border-red-300 dark:hover:border-red-800 transition-colors">
+      <h3 class="font-semibold mb-1">Exploring Digital Gardens</h3>
+      <p class="text-sm text-gray-600 dark:text-gray-400">Grow ideas in public with evergreen notes and portable content.</p>
+    </a>
+  </div>
+
+  <h2>Learning paths</h2>
+  <div class="not-prose grid md:grid-cols-3 gap-4">
+    <div class="border rounded-lg p-4 bg-[var(--surface)]">
+      <h3 class="font-semibold mb-2">Beginner</h3>
+      <ul class="list-disc pl-5 text-sm space-y-1">
+        <li>Set up a site with Eleventy</li>
+        <li>Add a blog and RSS feed</li>
+        <li>Deploy to Netlify</li>
+      </ul>
+    </div>
+    <div class="border rounded-lg p-4 bg-[var(--surface)]">
+      <h3 class="font-semibold mb-2">Publishing</h3>
+      <ul class="list-disc pl-5 text-sm space-y-1">
+        <li>IndieWeb basics (h‑card, rel‑me, Webmention)</li>
+        <li>Portable content and migration tips</li>
+        <li>Search and sitemap for discovery</li>
+      </ul>
+    </div>
+    <div class="border rounded-lg p-4 bg-[var(--surface)]">
+      <h3 class="font-semibold mb-2">Accessibility</h3>
+      <ul class="list-disc pl-5 text-sm space-y-1">
+        <li>Keyboard flows and focus states</li>
+        <li>Color contrast and motion preferences</li>
+        <li>Content readability and headings</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>Recommended resources</h2>
+  <div class="not-prose grid md:grid-cols-3 gap-4">
+    <div class="border rounded-lg p-4 bg-[var(--surface)]">
+      <h3 class="font-semibold mb-2">Build</h3>
+      <ul class="list-disc pl-5 text-sm space-y-1">
+        <li><a href="https://www.11ty.dev/">Eleventy</a></li>
+        <li><a href="https://gohugo.io/">Hugo</a></li>
+        <li><a href="https://tailwindcss.com/">Tailwind CSS</a></li>
+      </ul>
+    </div>
+    <div class="border rounded-lg p-4 bg-[var(--surface)]">
+      <h3 class="font-semibold mb-2">Host</h3>
+      <ul class="list-disc pl-5 text-sm space-y-1">
+        <li><a href="https://www.netlify.com/">Netlify</a></li>
+        <li><a href="https://vercel.com/">Vercel</a></li>
+        <li><a href="https://github.com/">GitHub</a></li>
+      </ul>
+    </div>
+    <div class="border rounded-lg p-4 bg-[var(--surface)]">
+      <h3 class="font-semibold mb-2">IndieWeb</h3>
+      <ul class="list-disc pl-5 text-sm space-y-1">
+        <li><a href="https://indieweb.org/">IndieWeb Wiki</a></li>
+        <li><a href="https://microformats.org/">Microformats</a></li>
+        <li><a href="https://webmention.net/">Webmention</a></li>
+      </ul>
+    </div>
+  </div>
 
   <h2>Get involved</h2>
   <p>Have questions or want to suggest a topic?</p>
@@ -26,11 +91,4 @@ permalink: /education/
       <a href="#newsletter" class="px-4 py-2 rounded border border-red-600 text-red-600 hover:bg-red-50 dark:hover:bg-red-900/20 transition-colors no-underline decoration-transparent">Subscribe to the newsletter</a>
     {% endif %}
   </div>
-
-  <h2>Recommended resources</h2>
-  <ul>
-    <li><a href="https://www.11ty.dev/">Eleventy</a> • <a href="https://gohugo.io/">Hugo</a> • <a href="https://tailwindcss.com/">Tailwind CSS</a></li>
-    <li><a href="https://www.netlify.com/">Netlify</a> • <a href="https://vercel.com/">Vercel</a> • <a href="https://github.com/">GitHub</a></li>
-    <li><a href="https://indieweb.org/">IndieWeb Wiki</a> • <a href="https://microformats.org/">Microformats</a> • <a href="https://webmention.net/">Webmention</a></li>
-  </ul>
 </section>

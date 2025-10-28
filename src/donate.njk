@@ -1,9 +1,9 @@
 ---
 layout: layouts/base.njk
-permalink: "/donate/"
-title: Support My Work
+permalink: "/support/"
+title: Support Berry House
 ---
-<h1 class="text-2xl font-bold mb-6">Support My Work</h1>
+<h1 class="text-2xl font-bold mb-6">Support Berry House</h1>
 
 <div class="prose prose-lg dark:prose-invert max-w-none">
   {% if site.donate.message %}
@@ -14,7 +14,7 @@ title: Support My Work
 
   {% if site.donate.enabled %}
   <h2>One-time Support</h2>
-  <p>Buy me a coffee or make a one-time contribution to help fuel my writing:</p>
+  <p>Make a one-time contribution to help sustain community projects and open-source work:</p>
   
   <div class="flex flex-wrap gap-4 my-6">
     {% if site.donate.kofi %}
@@ -33,7 +33,7 @@ title: Support My Work
 
   {% if site.donate.github %}
   <h2>Ongoing Support</h2>
-  <p>For ongoing support, consider sponsoring me on GitHub:</p>
+  <p>For ongoing support, consider sponsoring on GitHub:</p>
   
   <div class="my-6">
     <a href="https://github.com/sponsors/{{ site.donate.github }}" target="_blank" rel="noopener" 
@@ -44,16 +44,20 @@ title: Support My Work
   {% endif %}
   {% endif %}
 
-  <h2>Other Ways to Help</h2>
-  <ul>
-    <li><strong>Share my posts</strong> with others who might find them valuable</li>
-    <li><strong>Subscribe to my newsletter</strong> to stay updated on new content</li>
-    <li><strong>Follow me on social media</strong> and engage with my content</li>
-    <li><strong>Send feedback</strong> via email or webmentions</li>
+  <h2>Other Ways to Help (Non‑monetary)</h2>
+  <ul class="space-y-2">
+    <li><strong>Share our work</strong> — repost essays and portfolio pieces; link to berryhouse.ca.</li>
+    <li><strong>Subscribe</strong> — join the newsletter and share it with a friend or org.</li>
+    <li><strong>Star or contribute</strong> — star our GitHub repos, open issues, or submit PRs.</li>
+    <li><strong>Refer a client</strong> — introduce us to a nonprofit, collective, or indie creator.</li>
+    <li><strong>Offer a testimonial</strong> — a few lines about our work help immensely.</li>
+    <li><strong>Join the community</strong> — hop into our Discord and participate.</li>
+    <li><strong>Collaborate</strong> — propose a small, values‑aligned project or workshop.</li>
+    <li><strong>Invite to speak</strong> — accessibility, IndieWeb, and sustainable publishing.</li>
+    <li><strong>Give feedback</strong> — email thoughts, accessibility notes, or ideas.</li>
   </ul>
 
   <p class="text-sm text-gray-600 dark:text-gray-400 mt-8">
-    Every contribution, no matter how small, helps me continue creating thoughtful content 
-    and maintaining this blog. Thank you for your support! 🙏
+    Every contribution, monetary or otherwise, helps us sustain accessible community work and open‑source projects. Thank you for your support! 🙏
   </p>
 </div>
