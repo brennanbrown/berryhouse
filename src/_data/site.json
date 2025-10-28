@@ -3,11 +3,12 @@
   "description": "Hi. We're here to help you create and share meaningful work and art with the world. Whether you're looking to amplify your writing or build an independent website, we're here to help.",
   "url": "https://berryhouse.ca/",
   "author": "Brennan Kenneth Brown",
-  "email": "mail@brennanbrown.ca",
+  "email": "hi@berryhouse.ca",
   "social": {
     "github": "brennanbrown",
     "mastodon": "",
-    "twitter": ""
+    "twitter": "",
+    "linkedin": "https://www.linkedin.com/company/berryhouse-agency"
   },
   "repo": {
     "url": "https://github.com/brennanbrown/berryhouse",
