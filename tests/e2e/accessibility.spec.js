@@ -9,7 +9,7 @@ test.describe('Accessibility', () => {
     
     // Check heading structure
     const h1 = await page.locator('h1').textContent();
-    expect(h1).toContain('JAMstack Blog Template');
+    expect(h1).toContain('Berry House');
   });
 
   test('images have alt text', async ({ page }) => {

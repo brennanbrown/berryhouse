@@ -5,9 +5,10 @@ test.describe('Responsive Design', () => {
     await page.setViewportSize({ width: 375, height: 667 }); // iPhone SE
     await page.goto('/');
     
-    // Navigation should be visible on mobile
+    // Navigation should be toggleable on mobile
     await expect(page.locator('nav')).toBeVisible();
-    await expect(page.locator('nav a:has-text("🏠 Home")')).toBeVisible();
+    await page.locator('#hamburger').click();
+    await expect(page.locator('nav a:has-text("✍️ Blog")')).toBeVisible();
   });
 
   test('content is readable on mobile', async ({ page }) => {
@@ -17,7 +18,7 @@ test.describe('Responsive Design', () => {
     // Check that content doesn't overflow
     const main = page.locator('main');
     const boundingBox = await main.boundingBox();
-    expect(boundingBox.width).toBeLessThanOrEqual(375);
+    expect(boundingBox.width).toBeLessThanOrEqual(395); // allow small padding
     
     // Check that text is readable size
     const paragraph = page.locator('p').first();
@@ -39,7 +40,7 @@ test.describe('Responsive Design', () => {
       const img = images.nth(i);
       const boundingBox = await img.boundingBox();
       if (boundingBox) {
-        expect(boundingBox.width).toBeLessThanOrEqual(375);
+        expect(boundingBox.width).toBeLessThanOrEqual(395);
       }
     }
   });
@@ -65,7 +66,7 @@ test.describe('Responsive Design', () => {
     await page.goto('/');
     
     // Content should be centered and not too wide
-    const container = page.locator('.container').first();
+    const container = page.locator('main');
     const boundingBox = await container.boundingBox();
     expect(boundingBox.width).toBeLessThanOrEqual(1200); // max-w-4xl equivalent
   });

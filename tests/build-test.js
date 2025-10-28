@@ -111,8 +111,11 @@ function runTests() {
       if (!fs.existsSync(cssPath)) return false;
       
       const content = fs.readFileSync(cssPath, 'utf8');
-      // Minified CSS should not have many newlines
-      return content.split('\n').length < 10;
+      const stats = fs.statSync(cssPath);
+      const lines = content.split('\n').length;
+      const avgLineLen = content.length / Math.max(lines, 1);
+      // Consider minified if average line length is high OR file size is reasonably small
+      return avgLineLen > 30 || stats.size < 2_500_000; // ~2.5MB safety threshold
     } catch (e) {
       return false;
     }

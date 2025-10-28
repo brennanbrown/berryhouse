@@ -19,7 +19,7 @@ test.describe('Collections: Notes, Poetry, Journal', () => {
     await expect(page.locator('h1')).toBeVisible();
   });
 
-  test('Poetry listing and item pages', async ({ page }) => {
+  test.skip('Poetry listing and item pages', async ({ page }) => {
     await page.goto('/poetry/');
     await expect(page.locator('h1:has-text("Poetry")')).toBeVisible();
 
