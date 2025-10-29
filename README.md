@@ -1,6 +1,13 @@
-![Berry House preview](./screenshot.png)
+![Berry House preview](src/assets/screenshots/screenshot.png)
 
 # Berry House
+
+[![Website](https://img.shields.io/website?url=https%3A%2F%2Fberryhouse.ca)](https://berryhouse.ca)
+[![Deploy](https://img.shields.io/badge/Deploy-Netlify-00C7B7?logo=netlify)](https://www.netlify.com/)
+![Node](https://img.shields.io/badge/node-%3E%3D18-339933?logo=node.js)
+![Eleventy](https://img.shields.io/badge/Eleventy-3.0-000000?logo=eleventy)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.4-38B2AC?logo=tailwindcss)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 Berry House is a small, values‑driven studio site and writing hub built with Eleventy and Tailwind CSS. It emphasizes accessibility, performance, and IndieWeb principles—owning your platform and content.
 
@@ -11,6 +18,24 @@ This repository contains the production code for the Berry House agency website.
 
 - Live site: https://berryhouse.ca/
 - Repository: https://github.com/brennanbrown/berryhouse
+
+## At a Glance
+
+- **Description**: Hi. We're here to help you create and share meaningful work and art with the world.
+- **Author**: Brennan Kenneth Brown
+- **Location**: Calgary, Alberta, Canada
+- **Contact**: hi@berryhouse.ca
+- **Focus**: Accessibility, performance, IndieWeb principles, digital autonomy
+
+## Key Sections
+
+- **Portfolio** — Client work and case studies: https://berryhouse.ca/portfolio/
+- **Résumé** — Experience and skills: https://berryhouse.ca/resume/
+- **Links** — Curated resources and bookmarks: https://berryhouse.ca/links/
+- **Bookshelf** — Reading list and notes: https://berryhouse.ca/bookshelf/
+- **Services** — Offerings and engagement model: https://berryhouse.ca/services/
+- **Education Hub** — Guides and learning materials: https://berryhouse.ca/education/
+- **Community Showcase** — Sites and projects from the community: https://berryhouse.ca/showcase/
 
 ## Tech Stack
 - Eleventy (11ty) for site generation
@@ -301,7 +326,7 @@ Workflow:
 
 ## 📄 License
 
-MIT License — see `LICENSE`.
+MIT License — see [LICENSE](./LICENSE).
 
 Note: this repository is the Berry House agency website (production code). If you need a reusable starter, use the 11ty Indie Web Blog Starter linked above.
 
