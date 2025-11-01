@@ -3077,6 +3077,10 @@ h1, h2, h3, h4, h5, h6,
 }
 
 @media (min-width: 640px) {
+  .sm\:w-40 {
+    width: 10rem;
+  }
+
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -3117,6 +3121,10 @@ h1, h2, h3, h4, h5, h6,
 
   .md\:w-20 {
     width: 5rem;
+  }
+
+  .md\:w-48 {
+    width: 12rem;
   }
 
   .md\:max-w-5xl {
@@ -3188,6 +3196,10 @@ h1, h2, h3, h4, h5, h6,
 
   .lg\:grid {
     display: grid;
+  }
+
+  .lg\:w-64 {
+    width: 16rem;
   }
 
   .lg\:max-w-6xl {
