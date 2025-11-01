@@ -1,6 +1,10 @@
-![Berry House preview](src/assets/screenshots/screenshot.png)
+<div align="center">
+  <img src="src/assets/logo-readme.png" alt="Berry House Logo" width="200" />
+</div>
 
 # Berry House
+
+![Berry House preview](src/assets/screenshots/screenshot.png)
 
 [![Website](https://img.shields.io/website?url=https%3A%2F%2Fberryhouse.ca)](https://berryhouse.ca)
 [![Deploy](https://img.shields.io/badge/Deploy-Netlify-00C7B7?logo=netlify)](https://www.netlify.com/)
@@ -26,6 +30,30 @@ This repository contains the production code for the Berry House agency website.
 - **Location**: Calgary, Alberta, Canada
 - **Contact**: hi@berryhouse.ca
 - **Focus**: Accessibility, performance, IndieWeb principles, digital autonomy
+
+## 💝 Support This Work
+
+Berry House operates on a dual mission: providing professional services at market rates while offering **pro bono and pay-what-you-can support** to marginalized communities, vulnerable individuals, and low-income nonprofits.
+
+Your support helps sustain this model and enables me to:
+- Continue building **free, open-source themes and tools** for the IndieWeb community
+- Offer **accessible web development services** to those who couldn't otherwise afford them
+- Maintain and improve **community resources** like Write Club and educational content
+- Dedicate time to **pro bono work** for social justice organizations and marginalized creators
+
+**Ways to support:**
+
+<div align="center">
+
+[![Ko-fi](https://img.shields.io/badge/Ko--fi-F16061?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/brennan)
+[![Patreon](https://img.shields.io/badge/Patreon-F96854?style=for-the-badge&logo=patreon&logoColor=white)](https://www.patreon.com/cw/brennankbrown)
+[![GitHub Sponsors](https://img.shields.io/badge/GitHub_Sponsors-EA4AAA?style=for-the-badge&logo=github-sponsors&logoColor=white)](https://github.com/sponsors/brennanbrown)
+
+</div>
+
+Every contribution—no matter the size—makes a meaningful difference. Thank you for believing in a more accessible, equitable web. 🍓
+
+---
 
 ## Key Sections
 
@@ -99,6 +127,23 @@ This repository contains the production code for the Berry House agency website.
 - Build the site: `npm run build`
 - Take portfolio screenshots (local): `npm run shots:portfolio`
 - Take portfolio screenshots (live links): `npm run shots:portfolio:live`
+
+### 🎨 Logo & Icons
+
+The site uses a custom logo that's automatically converted to all necessary formats:
+
+```bash
+npm run build:icons  # Generate all icon sizes from new-logo.png
+```
+
+This script generates:
+- **Favicons**: `favicon.ico`, `favicon-16x16.png`, `favicon-32x32.png`, `favicon-48x48.png`
+- **Apple Touch Icons**: `apple-touch-icon.png`, `apple-touch-icon-precomposed.png`
+- **PWA Icons**: `icon-192x192.png`, `icon-512x512.png`
+- **Social/OG Image**: `og-default.png` (1200x630)
+- **Brand Assets**: `logo-footer.png` (64px), `logo-readme.png` (200px)
+
+To update the logo, replace `new-logo.png` in the project root and run `npm run build:icons`.
 
 ## ✅ Testing
 
