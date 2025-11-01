@@ -64,6 +64,28 @@ module.exports = function (eleventyConfig) {
     }));
   });
 
+  // Build tagList collection: unique tags across all posts
+  eleventyConfig.addCollection("tagList", (collectionApi) => {
+    const tagSet = new Set();
+    collectionApi.getFilteredByGlob("src/blog/**/*.md").forEach((item) => {
+      if (item.data.tags && Array.isArray(item.data.tags)) {
+        item.data.tags.forEach((tag) => tagSet.add(tag));
+      }
+    });
+    return Array.from(tagSet).sort();
+  });
+
+  // Build categoryList collection: unique categories across all posts
+  eleventyConfig.addCollection("categoryList", (collectionApi) => {
+    const categorySet = new Set();
+    collectionApi.getFilteredByGlob("src/blog/**/*.md").forEach((item) => {
+      if (item.data.category) {
+        categorySet.add(item.data.category);
+      }
+    });
+    return Array.from(categorySet).sort();
+  });
+
   // Utility: take first or last N items from an array (mirrors Eleventy base blog)
   eleventyConfig.addNunjucksFilter("head", (arr, n) => {
     if (!Array.isArray(arr)) return arr;

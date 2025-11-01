@@ -5,7 +5,7 @@ subtitle: Help us create a visual identity that reflects our values-driven appro
 author: Brennan Kenneth Brown
 date: 2025-09-09
 description: Berry House is looking for a talented brand designer to collaborate on our complete visual identity—from logo to brand guidelines. Join us in building something meaningful.
-tags: [collaboration, design, branding, announcement]
+tags: [collaboration, design, branding, announcements]
 featuredImage: https://cdn.pixabay.com/photo/2019/12/12/14/34/help-4690879_960_720.jpg
 category: announcements
 ---

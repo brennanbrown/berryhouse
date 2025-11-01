@@ -6,7 +6,7 @@ permalink: /tags/
 <h1 class="text-2xl font-bold mb-6">Tags</h1>
 
 {% if collections.tagList and collections.tagList.length %}
-<ul class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+<ul class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
   {% for t in collections.tagList %}
     {% set count = 0 %}
     {% for post in collections.posts %}
@@ -14,9 +14,11 @@ permalink: /tags/
         {% set count = count + 1 %}
       {% endif %}
     {% endfor %}
-    <li class="border rounded p-3 flex items-center justify-between hover:bg-gray-50 dark:hover:bg-gray-800">
-      <a class="font-medium hover:text-blue-600" href="/tags/{{ t | slug }}/">#{{ t }}</a>
-      <span class="text-xs text-gray-500">{{ count }} post{% if count != 1 %}s{% endif %}</span>
+    <li class="border rounded p-3 flex items-center justify-between gap-3 hover:bg-gray-50 dark:hover:bg-gray-800">
+      <a class="hover:opacity-80 no-underline decoration-transparent px-2 py-0.5 rounded text-white inline-block text-xs flex-shrink" 
+         style="background-color: {{ t | tagColor }}"
+         href="/tags/{{ t | slug }}/">#{{ t }}</a>
+      <span class="text-xs text-gray-500 flex-shrink-0">{{ count }} post{% if count != 1 %}s{% endif %}</span>
     </li>
   {% endfor %}
 </ul>
