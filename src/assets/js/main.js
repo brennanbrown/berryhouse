@@ -118,13 +118,19 @@
     });
   }
 
-  // Font toggle for footer
+  // Font toggle in a11y menu
   const fontToggle = document.getElementById('font-toggle');
   if (fontToggle) {
-    const applyFontPref = (enabled) => {
-      document.documentElement.classList.toggle('system-fonts', enabled);
-      fontToggle.textContent = enabled ? 'Web Fonts' : 'System Fonts';
-      fontToggle.setAttribute('aria-pressed', enabled ? 'true' : 'false');
+    const applyFontPref = (useSystemFonts) => {
+      if (useSystemFonts) {
+        document.documentElement.classList.add('system-fonts');
+        fontToggle.textContent = 'Web Fonts';
+        fontToggle.setAttribute('aria-pressed', 'true');
+      } else {
+        document.documentElement.classList.remove('system-fonts');
+        fontToggle.textContent = 'System Fonts';
+        fontToggle.setAttribute('aria-pressed', 'false');
+      }
     };
 
     fontToggle.addEventListener('click', () => {
@@ -134,8 +140,12 @@
       localStorage.setItem('systemFonts', next ? '1' : '0');
     });
     
-    // Apply saved font preference
+    // Apply saved font preference on load
     const savedFontPref = localStorage.getItem('systemFonts');
-    applyFontPref(savedFontPref === '1');
+    if (savedFontPref === '1') {
+      applyFontPref(true);
+    } else {
+      applyFontPref(false);
+    }
   }
 })();
