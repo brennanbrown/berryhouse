@@ -12,7 +12,18 @@ The contact form at `/contact/` is now configured to work with Netlify Forms.
 
 2. **Success Page**: After submission, users are redirected to `/contact/success/`
 
-3. **Email Notifications**: Configured in `netlify.toml` to send to `hi@berryhouse.ca`
+3. **Email Notifications**: Must be configured in the Netlify UI (see setup steps below)
+
+## Initial Setup in Netlify UI
+
+After deploying your site, you need to enable form detection:
+
+1. Go to your Netlify dashboard
+2. Navigate to [**Forms**](https://app.netlify.com/projects/berryhouse/forms)
+3. Select **Enable form detection**
+4. Deploy (or redeploy) your site
+
+Netlify will automatically scan your site for forms with the `data-netlify="true"` attribute.
 
 ## Testing the Form
 
@@ -40,14 +51,19 @@ The form won't work fully in local development. To test locally:
 4. Set up additional integrations (Slack, Zapier, etc.)
 
 ### Email Notifications
-Email notifications are configured in `netlify.toml`:
-```toml
-[forms.contact]
-  to = "hi@berryhouse.ca"
-  subject = "New Contact Form Submission from Berry House"
-```
 
-To change the recipient email, update the `to` field and redeploy.
+Email notifications must be configured in the Netlify UI:
+
+1. Go to your site in Netlify
+2. Navigate to **Configuration → Notifications → Form submission notifications**
+3. Select **Add notification**
+4. Choose **Email notification**
+5. Select the form name: **contact**
+6. Enter the email address: **hi@berryhouse.ca**
+7. (Optional) Customize the subject line
+8. Save the notification
+
+You can set up multiple notification recipients or integrate with services like Slack, webhooks, or Zapier.
 
 ## Spam Protection
 
@@ -87,9 +103,10 @@ In Netlify dashboard, add outgoing webhooks to integrate with:
 
 ### Not Receiving Email Notifications
 - Check spam folder
-- Verify email address in `netlify.toml`
-- Ensure the site has been redeployed after configuration changes
+- Verify notification is set up in Netlify UI: **Configuration → Notifications**
+- Confirm the email address is correct in the notification settings
 - Check Netlify dashboard for form submissions to confirm they're being received
+- Make sure you selected the correct form name when setting up the notification
 
 ### Form Submitting to 404
 - Ensure the success page exists at `/contact/success/`

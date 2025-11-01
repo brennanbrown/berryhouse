@@ -53,10 +53,3 @@
   for = "/feed.xml"
   [headers.values]
     Content-Type = "application/atom+xml; charset=utf-8"
-
-# Netlify Forms configuration
-[forms]
-  # Default email notifications
-  [forms.contact]
-    to = "hi@berryhouse.ca"
-    subject = "New Contact Form Submission from Berry House"
