@@ -1,14 +1,33 @@
 {
-  "name": "Indieweb Starter Blog",
-  "short_name": "Indieweb Blog",
+  "name": "🍓 Berry House",
+  "short_name": "Berry House",
+  "description": "Hi. We're here to help you create and share meaningful work and art with the world. Whether you're looking to amplify your writing or build an independent website, we're here to help.",
   "start_url": "/",
-  "scope": "/",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#a78bfa",
+  "theme_color": "#ef4444",
+  "background_color": "#fefbff",
   "icons": [
-    { "src": "/assets/favicon-16x16.png", "sizes": "16x16", "type": "image/png" },
-    { "src": "/assets/favicon-32x32.png", "sizes": "32x32", "type": "image/png" },
-    { "src": "/assets/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+    {
+      "src": "/assets/favicon-48x48.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
   ]
 }
