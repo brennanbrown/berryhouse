@@ -27,10 +27,14 @@
   "collaboration": "#a855f7",
   "branding": "#f59e0b",
   "announcement": "#dc2626",
+  "announcements": "#dc2626",
   "testing": "#16a34a",
   "jamstack": "#fb923c",
   "retro": "#f472b6",
   "privacy": "#475569",
   "blogging": "#2563eb",
-  "thoughts": "#94a3b8"
+  "thoughts": "#94a3b8",
+  "troubleshooting": "#f97316",
+  "berry-house": "#ef4444",
+  "engineering": "#6366f1"
 }
