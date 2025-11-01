@@ -1,12 +1,14 @@
 {% set relatedPosts = [] %}
 {% if tags %}
   {% for post in collections.posts %}
-    {% if post.url != page.url %}
+    {% if post.url != page.url and post.data.tags %}
       {% set commonTags = 0 %}
       {% for tag in tags %}
-        {% if post.data.tags and post.data.tags.includes(tag) %}
-          {% set commonTags = commonTags + 1 %}
-        {% endif %}
+        {% for postTag in post.data.tags %}
+          {% if postTag == tag %}
+            {% set commonTags = commonTags + 1 %}
+          {% endif %}
+        {% endfor %}
       {% endfor %}
       {% if commonTags > 0 %}
         {% set relatedPosts = (relatedPosts.push({post: post, score: commonTags}), relatedPosts) %}
