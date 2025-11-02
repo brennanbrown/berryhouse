@@ -16,17 +16,19 @@ title: Support Berry House
   <h2>One-time Support</h2>
   <p>Make a one-time contribution to help sustain community projects and open-source work:</p>
   
-  <div class="flex flex-wrap gap-4 my-6">
+  <div class="not-prose flex flex-wrap gap-4 my-6">
     {% if site.donate.kofi %}
     <a href="https://ko-fi.com/{{ site.donate.kofi }}" target="_blank" rel="noopener" 
-       class="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
-      ☕ Ko-fi
+       class="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
+      <i class="fa-solid fa-mug-saucer" aria-hidden="true"></i>
+      <span>Ko-fi</span>
     </a>
     {% endif %}
     {% if site.donate.buymeacoffee %}
     <a href="https://buymeacoffee.com/{{ site.donate.buymeacoffee }}" target="_blank" rel="noopener" 
-       class="inline-flex items-center px-6 py-3 bg-yellow-600 text-white rounded-lg hover:bg-yellow-700 transition-colors">
-      ☕ Buy Me a Coffee
+       class="inline-flex items-center gap-2 px-6 py-3 bg-yellow-600 text-black rounded-lg hover:bg-yellow-700 transition-colors">
+      <i class="fa-solid fa-mug-saucer" aria-hidden="true"></i>
+      <span>Buy Me a Coffee</span>
     </a>
     {% endif %}
   </div>
@@ -35,10 +37,16 @@ title: Support Berry House
   <h2>Ongoing Support</h2>
   <p>For ongoing support, consider sponsoring on GitHub:</p>
   
-  <div class="my-6">
+  <div class="not-prose my-6 flex flex-wrap gap-4">
     <a href="https://github.com/sponsors/{{ site.donate.github }}" target="_blank" rel="noopener" 
-       class="inline-flex items-center px-6 py-3 bg-gray-800 text-white rounded-lg hover:bg-gray-900 transition-colors">
-      💖 GitHub Sponsors
+       class="inline-flex items-center gap-2 px-6 py-3 bg-gray-800 text-white rounded-lg hover:bg-gray-900 transition-colors">
+      <i class="fa-brands fa-github" aria-hidden="true"></i>
+      <span>GitHub Sponsors</span>
+    </a>
+    <a href="https://patreon.com/brennankbrown" target="_blank" rel="noopener"
+       class="inline-flex items-center gap-2 px-6 py-3 bg-orange-600 text-white rounded-lg hover:bg-orange-700 transition-colors">
+      <i class="fa-brands fa-patreon" aria-hidden="true"></i>
+      <span>Patreon</span>
     </a>
   </div>
   {% endif %}
@@ -61,3 +69,4 @@ title: Support Berry House
     Every contribution, monetary or otherwise, helps us sustain accessible community work and open‑source projects. Thank you for your support! 🙏
   </p>
 </div>
+
