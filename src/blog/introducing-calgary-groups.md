@@ -5,7 +5,7 @@ subtitle: A searchable directory of grassroots organizations in Calgary
 author: Brennan Kenneth Brown
 date: 2025-12-26
 description: How do you find your people, and your community within your local city? Calgary Groups is a searchable directory of grassroots organizations in Calgary.
-tags: [calgary-groups, directory, grassroots, Calgary]
+tags: [projects, directory, grassroots, Calgary]
 category: projects
 featuredImage: https://raw.githubusercontent.com/Berry-House-YYC/calgarygroups/refs/heads/main/src/assets/screenshot.png
 ---
