@@ -10,9 +10,9 @@ category: projects
 featuredImage: https://raw.githubusercontent.com/Berry-House-YYC/calgarygroups/refs/heads/main/src/assets/screenshot.png
 ---
 
-I've lived in Calgary nearly my entire life. For nearly twenty years I’ve personally been trying to figure out where I belong in this city. And I mean that literally. What groups exist and who’s organizing around the things I care about? 
+I've lived in Calgary nearly my entire life. For twenty years I’ve personally been trying to figure out where I belong in this city. And I mean that literally. What groups exist and who’s organizing around the things I care about? 
 
-The ideal would be to be able to easily find places and groups where I could volunteer, learn, protest, create, or really just sit in a room of people who get it. You kow?
+The ideal would be to be able to easily find places and groups where I could volunteer, learn, protest, create, or really just sit in a room of people who get it. You know?
 
 Anytime I *was* lucky enough to find something, like a book club or community garden, it felt as though I stumbled onto something secret. Menionted in passing at a party. A sun-bleached poster at a coffee shop. Tagged haphazardly on an Instagram post. A Reddit thread from three years ago with broken links. This shouldn’t be so difficult, should it?
 
@@ -78,6 +78,7 @@ This is a starting point.
 ## Two Asks / Call-to-Actions
 
 **1. Explore the directory.** Browse [calgarygroups.ca](https://calgarygroups.ca/) and find something that speaks to you. Maybe it's a book club you didn't know existed. Maybe it's an activist group working on something you care about. Maybe it's a social club that sounds exactly like what you've been looking for.
+
 **2. Help us grow it.** If you know a group that should be listed, [submit it through our form](https://calgarygroups.ca/submit/). If you see outdated information, let us know. If your own organization isn't listed, add it. This only works if it's actually used and maintained by the community.
 
 ## About Berry House
@@ -92,7 +93,7 @@ If you need a website, help with content strategy, or just want to talk about th
 
 # A Note of Thanks
 
-This project wouldn't exist without **Yvonne Berger**, who did the incredible, painstaking work of curating and organizing these 155 listings. Building the directory was the easy part. Finding, researching, categorizing, and writing descriptions for every group? That' the real work. Thank you, Yvonne.
+This project wouldn't exist without **Yvonne Berger**, who did the incredible, painstaking work of curating and organizing these 155 listings. Building the directory was the easy part. Finding, researching, and categorizing every group? That's the real work. Thank you, Yvonne.
 
 ## What's Next
 
